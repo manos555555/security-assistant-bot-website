@@ -7,7 +7,10 @@
     <meta name="keywords" content="discord bot, security bot, moderation, leveling, AI assistant, music bot">
     <title>🛡️ Security Assistant Bot - Ultimate Discord Bot</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="language-switcher.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -18,10 +21,14 @@
                 <span class="logo-text">Security Assistant</span>
             </div>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#commands">Commands</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#support">Support</a>
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#commands" data-i18n="nav.commands">Commands</a>
+                <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+                <a href="#support" data-i18n="nav.support">Support</a>
+                <div class="language-switcher">
+                    <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+                    <button class="lang-btn" data-lang="el" title="Ελληνικά">🇬🇷</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -29,40 +36,40 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">✨ Now with AI Integration</div>
+            <div class="hero-badge" data-i18n="hero.badge">✨ Now with AI Integration</div>
             <h1 class="hero-title">
-                The Ultimate Discord Bot
-                <span class="gradient-text">for Your Community</span>
+                <span data-i18n="hero.title">The Ultimate Discord Bot</span>
+                <span class="gradient-text" data-i18n="hero.titleGradient">for Your Community</span>
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero.description">
                 Powerful security, intelligent moderation, engaging leveling system, AI assistant, 
                 music player, and 50+ features to supercharge your Discord server.
             </p>
             <div class="hero-highlights">
-                <div class="highlight">🔥 AI-Powered Story System</div>
-                <div class="highlight">🚀 Automated Template Creator</div>
-                <div class="highlight">🎨 Image & GIF Generation</div>
+                <div class="highlight" data-i18n="hero.highlight1">🔥 AI-Powered Story System</div>
+                <div class="highlight" data-i18n="hero.highlight2">🚀 Automated Template Creator</div>
+                <div class="highlight" data-i18n="hero.highlight3">🎨 Image & GIF Generation</div>
             </div>
             <div class="hero-buttons">
                 <a href="https://discord.com/oauth2/authorize?client_id=1429614048021971044&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn btn-primary" target="_blank">
-                    <span>➕ Add to Discord</span>
+                    <span data-i18n="hero.btnAdd">➕ Add to Discord</span>
                 </a>
                 <a href="#features" class="btn btn-secondary">
-                    <span>📖 Learn More</span>
+                    <span data-i18n="hero.btnLearn">📖 Learn More</span>
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Commands</div>
+                    <div class="stat-number" data-i18n="hero.stat1Number">50+</div>
+                    <div class="stat-label" data-i18n="hero.stat1Label">Commands</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Uptime</div>
+                    <div class="stat-number" data-i18n="hero.stat2Number">24/7</div>
+                    <div class="stat-label" data-i18n="hero.stat2Label">Uptime</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Free</div>
+                    <div class="stat-number" data-i18n="hero.stat3Number">100%</div>
+                    <div class="stat-label" data-i18n="hero.stat3Label">Free</div>
                 </div>
             </div>
         </div>
@@ -72,145 +79,145 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Powerful Features</h2>
-                <p>Everything you need to manage and grow your Discord community</p>
+                <h2 data-i18n="features.title">Powerful Features</h2>
+                <p data-i18n="features.subtitle">Everything you need to manage and grow your Discord community</p>
             </div>
             
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>Advanced Security</h3>
-                    <p>Anti-raid protection, auto-moderation, verification system, and real-time threat detection to keep your server safe.</p>
+                    <h3 data-i18n="features.security.title">Advanced Security</h3>
+                    <p data-i18n="features.security.desc">Anti-raid protection, auto-moderation, verification system, and real-time threat detection to keep your server safe.</p>
                     <ul class="feature-list">
-                        <li>✓ Anti-raid system</li>
-                        <li>✓ Auto-moderation</li>
-                        <li>✓ Member verification</li>
-                        <li>✓ Invite tracking</li>
+                        <li>✓ <span data-i18n="features.security.items.0">Anti-raid system</span></li>
+                        <li>✓ <span data-i18n="features.security.items.1">Auto-moderation</span></li>
+                        <li>✓ <span data-i18n="features.security.items.2">Member verification</span></li>
+                        <li>✓ <span data-i18n="features.security.items.3">Invite tracking</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🎮</div>
-                    <h3>Leveling System</h3>
-                    <p>Engage your community with XP, levels, achievements, leaderboards, and customizable rewards.</p>
+                    <h3 data-i18n="features.leveling.title">Leveling System</h3>
+                    <p data-i18n="features.leveling.desc">Engage your community with XP, levels, achievements, leaderboards, and customizable rewards.</p>
                     <ul class="feature-list">
-                        <li>✓ XP & Level system</li>
-                        <li>✓ 50+ Achievements</li>
-                        <li>✓ Custom rewards</li>
-                        <li>✓ Leaderboards</li>
+                        <li>✓ <span data-i18n="features.leveling.items.0">XP & Level system</span></li>
+                        <li>✓ <span data-i18n="features.leveling.items.1">50+ Achievements</span></li>
+                        <li>✓ <span data-i18n="features.leveling.items.2">Custom rewards</span></li>
+                        <li>✓ <span data-i18n="features.leveling.items.3">Leaderboards</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card featured">
-                    <div class="feature-badge">⭐ Popular</div>
+                    <div class="feature-badge" data-i18n="features.ai.badge">⭐ Popular</div>
                     <div class="feature-icon">🤖</div>
-                    <h3>AI Assistant</h3>
-                    <p>Powered by Google Gemini AI for intelligent conversations, image generation, and smart assistance.</p>
+                    <h3 data-i18n="features.ai.title">AI Assistant</h3>
+                    <p data-i18n="features.ai.desc">Powered by Google Gemini AI for intelligent conversations, image generation, and smart assistance.</p>
                     <ul class="feature-list">
-                        <li>✓ Natural conversations</li>
-                        <li>✓ Image generation</li>
-                        <li>✓ Context awareness</li>
-                        <li>✓ Multi-language</li>
+                        <li>✓ <span data-i18n="features.ai.items.0">Natural conversations</span></li>
+                        <li>✓ <span data-i18n="features.ai.items.1">Image generation</span></li>
+                        <li>✓ <span data-i18n="features.ai.items.2">Context awareness</span></li>
+                        <li>✓ <span data-i18n="features.ai.items.3">Multi-language</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card featured">
-                    <div class="feature-badge">🔥 Unique</div>
+                    <div class="feature-badge" data-i18n="features.story.badge">🔥 Unique</div>
                     <div class="feature-icon">📖</div>
-                    <h3>Interactive Story System</h3>
-                    <p>Create immersive role-playing stories with AI-powered narratives, multiple roles, and dynamic choices!</p>
+                    <h3 data-i18n="features.story.title">Interactive Story System</h3>
+                    <p data-i18n="features.story.desc">Create immersive role-playing stories with AI-powered narratives, multiple roles, and dynamic choices!</p>
                     <ul class="feature-list">
-                        <li>✓ AI-generated stories</li>
-                        <li>✓ Multiple character roles</li>
-                        <li>✓ Dynamic story progression</li>
-                        <li>✓ Turn-based gameplay</li>
-                        <li>✓ Story templates</li>
+                        <li>✓ <span data-i18n="features.story.items.0">AI-generated stories</span></li>
+                        <li>✓ <span data-i18n="features.story.items.1">Multiple character roles</span></li>
+                        <li>✓ <span data-i18n="features.story.items.2">Dynamic story progression</span></li>
+                        <li>✓ <span data-i18n="features.story.items.3">Turn-based gameplay</span></li>
+                        <li>✓ <span data-i18n="features.story.items.4">Story templates</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card featured">
-                    <div class="feature-badge">🚀 Revolutionary</div>
+                    <div class="feature-badge" data-i18n="features.template.badge">🚀 Revolutionary</div>
                     <div class="feature-icon">🎨</div>
-                    <h3>AI Template Creator</h3>
-                    <p>Generate complete Discord server templates with AI! Channels, roles, permissions - all automated!</p>
+                    <h3 data-i18n="features.template.title">AI Template Creator</h3>
+                    <p data-i18n="features.template.desc">Generate complete Discord server templates with AI! Channels, roles, permissions - all automated!</p>
                     <ul class="feature-list">
-                        <li>✓ AI-powered generation</li>
-                        <li>✓ Custom categories</li>
-                        <li>✓ Auto role setup</li>
-                        <li>✓ Permission templates</li>
-                        <li>✓ One-click deployment</li>
+                        <li>✓ <span data-i18n="features.template.items.0">AI-powered generation</span></li>
+                        <li>✓ <span data-i18n="features.template.items.1">Custom categories</span></li>
+                        <li>✓ <span data-i18n="features.template.items.2">Auto role setup</span></li>
+                        <li>✓ <span data-i18n="features.template.items.3">Permission templates</span></li>
+                        <li>✓ <span data-i18n="features.template.items.4">One-click deployment</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🎵</div>
-                    <h3>Music Player</h3>
-                    <p>High-quality music streaming with playlist support, audio effects, and queue management.</p>
+                    <h3 data-i18n="features.music.title">Music Player</h3>
+                    <p data-i18n="features.music.desc">High-quality music streaming with playlist support, audio effects, and queue management.</p>
                     <ul class="feature-list">
-                        <li>✓ YouTube & Spotify</li>
-                        <li>✓ Playlists</li>
-                        <li>✓ Audio effects</li>
-                        <li>✓ Queue system</li>
+                        <li>✓ <span data-i18n="features.music.items.0">YouTube & Spotify</span></li>
+                        <li>✓ <span data-i18n="features.music.items.1">Playlists</span></li>
+                        <li>✓ <span data-i18n="features.music.items.2">Audio effects</span></li>
+                        <li>✓ <span data-i18n="features.music.items.3">Queue system</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">👋</div>
-                    <h3>Welcome System</h3>
-                    <p>Customizable welcome messages, auto-roles, and member tracking to greet new members.</p>
+                    <h3 data-i18n="features.welcome.title">Welcome System</h3>
+                    <p data-i18n="features.welcome.desc">Customizable welcome messages, auto-roles, and member tracking to greet new members.</p>
                     <ul class="feature-list">
-                        <li>✓ Custom messages</li>
-                        <li>✓ Auto-roles</li>
-                        <li>✓ Welcome images</li>
-                        <li>✓ DM welcome</li>
+                        <li>✓ <span data-i18n="features.welcome.items.0">Custom messages</span></li>
+                        <li>✓ <span data-i18n="features.welcome.items.1">Auto-roles</span></li>
+                        <li>✓ <span data-i18n="features.welcome.items.2">Welcome images</span></li>
+                        <li>✓ <span data-i18n="features.welcome.items.3">DM welcome</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🌍</div>
-                    <h3>Multi-Language</h3>
-                    <p>Full support for English and Greek with easy language switching per server.</p>
+                    <h3 data-i18n="features.language.title">Multi-Language</h3>
+                    <p data-i18n="features.language.desc">Full support for English and Greek with easy language switching per server.</p>
                     <ul class="feature-list">
-                        <li>✓ English & Greek</li>
-                        <li>✓ Per-server settings</li>
-                        <li>✓ Easy switching</li>
-                        <li>✓ Full translation</li>
+                        <li>✓ <span data-i18n="features.language.items.0">English & Greek</span></li>
+                        <li>✓ <span data-i18n="features.language.items.1">Per-server settings</span></li>
+                        <li>✓ <span data-i18n="features.language.items.2">Easy switching</span></li>
+                        <li>✓ <span data-i18n="features.language.items.3">Full translation</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Analytics</h3>
-                    <p>Community insights, activity tracking, and detailed statistics to understand your server.</p>
+                    <h3 data-i18n="features.analytics.title">Analytics</h3>
+                    <p data-i18n="features.analytics.desc">Community insights, activity tracking, and detailed statistics to understand your server.</p>
                     <ul class="feature-list">
-                        <li>✓ Activity tracking</li>
-                        <li>✓ Member insights</li>
-                        <li>✓ Command stats</li>
-                        <li>✓ Growth metrics</li>
+                        <li>✓ <span data-i18n="features.analytics.items.0">Activity tracking</span></li>
+                        <li>✓ <span data-i18n="features.analytics.items.1">Member insights</span></li>
+                        <li>✓ <span data-i18n="features.analytics.items.2">Command stats</span></li>
+                        <li>✓ <span data-i18n="features.analytics.items.3">Growth metrics</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🎲</div>
-                    <h3>Mini Games</h3>
-                    <p>Fun games including trivia, hangman, math challenges, and more to entertain your community.</p>
+                    <h3 data-i18n="features.games.title">Mini Games</h3>
+                    <p data-i18n="features.games.desc">Fun games including trivia, hangman, math challenges, and more to entertain your community.</p>
                     <ul class="feature-list">
-                        <li>✓ Trivia games</li>
-                        <li>✓ Hangman</li>
-                        <li>✓ Math challenges</li>
-                        <li>✓ Leaderboards</li>
+                        <li>✓ <span data-i18n="features.games.items.0">Trivia games</span></li>
+                        <li>✓ <span data-i18n="features.games.items.1">Hangman</span></li>
+                        <li>✓ <span data-i18n="features.games.items.2">Math challenges</span></li>
+                        <li>✓ <span data-i18n="features.games.items.3">Leaderboards</span></li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🎭</div>
-                    <h3>Reaction Roles</h3>
-                    <p>Easy role management with reaction roles and custom role menus.</p>
+                    <h3 data-i18n="features.roles.title">Reaction Roles</h3>
+                    <p data-i18n="features.roles.desc">Easy role management with reaction roles and custom role menus.</p>
                     <ul class="feature-list">
-                        <li>✓ Reaction roles</li>
-                        <li>✓ Custom menus</li>
-                        <li>✓ Multiple roles</li>
-                        <li>✓ Easy setup</li>
+                        <li>✓ <span data-i18n="features.roles.items.0">Reaction roles</span></li>
+                        <li>✓ <span data-i18n="features.roles.items.1">Custom menus</span></li>
+                        <li>✓ <span data-i18n="features.roles.items.2">Multiple roles</span></li>
+                        <li>✓ <span data-i18n="features.roles.items.3">Easy setup</span></li>
                     </ul>
                 </div>
             </div>
@@ -221,13 +228,13 @@
     <section id="commands" class="commands">
         <div class="container">
             <div class="section-header">
-                <h2>Popular Commands</h2>
-                <p>Just a few of the 50+ commands available</p>
+                <h2 data-i18n="commands.title">Popular Commands</h2>
+                <p data-i18n="commands.subtitle">Just a few of the 50+ commands available</p>
             </div>
 
             <div class="commands-grid">
                 <div class="command-category">
-                    <h3>🔒 Security</h3>
+                    <h3 data-i18n="commands.security">🔒 Security</h3>
                     <div class="command-item">
                         <code>!antiraid enable</code>
                         <span>Enable anti-raid protection</span>
@@ -243,7 +250,7 @@
                 </div>
 
                 <div class="command-category">
-                    <h3>🎮 Leveling</h3>
+                    <h3 data-i18n="commands.leveling">🎮 Leveling</h3>
                     <div class="command-item">
                         <code>!rank</code>
                         <span>Check your rank</span>
@@ -259,7 +266,7 @@
                 </div>
 
                 <div class="command-category">
-                    <h3>🤖 AI</h3>
+                    <h3 data-i18n="commands.ai">🤖 AI</h3>
                     <div class="command-item">
                         <code>!ai [question]</code>
                         <span>Ask AI anything</span>
@@ -275,7 +282,7 @@
                 </div>
 
                 <div class="command-category">
-                    <h3>🎵 Music</h3>
+                    <h3 data-i18n="commands.music">🎵 Music</h3>
                     <div class="command-item">
                         <code>!play [song]</code>
                         <span>Play music</span>
@@ -301,16 +308,16 @@
     <section id="pricing" class="pricing">
         <div class="container">
             <div class="section-header">
-                <h2>Simple Pricing</h2>
-                <p>Choose the plan that fits your community</p>
+                <h2 data-i18n="pricing.title">Simple Pricing</h2>
+                <p data-i18n="pricing.subtitle">Choose the plan that fits your community</p>
             </div>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Free</h3>
+                    <h3 data-i18n="pricing.free.name">Free</h3>
                     <div class="price">
                         <span class="amount">€0</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="pricing.month">/month</span>
                     </div>
                     <ul class="pricing-features">
                         <li>✓ Basic Commands</li>
@@ -326,14 +333,14 @@
                         <li>✗ Anti-Raid</li>
                         <li>✗ Mini Games</li>
                     </ul>
-                    <a href="https://discord.com/oauth2/authorize?client_id=1429614048021971044&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn btn-outline">Get Started</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1429614048021971044&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn btn-outline" data-i18n="pricing.free.btnText">Get Started</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Starter</h3>
+                    <h3 data-i18n="pricing.starter.name">Starter</h3>
                     <div class="price">
                         <span class="amount">€4.99</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="pricing.month">/month</span>
                     </div>
                     <ul class="pricing-features">
                         <li>✓ All Free features (Unlimited)</li>
@@ -349,15 +356,15 @@
                         <li>✗ Welcome System</li>
                         <li>✗ Community Brain</li>
                     </ul>
-                    <a href="#support" class="btn btn-outline">Upgrade Now</a>
+                    <a href="#support" class="btn btn-outline" data-i18n="pricing.starter.btnText">Upgrade Now</a>
                 </div>
 
                 <div class="pricing-card featured">
-                    <div class="pricing-badge">⭐ Best Value</div>
-                    <h3>Premium</h3>
+                    <div class="pricing-badge" data-i18n="pricing.premium.badge">⭐ Best Value</div>
+                    <h3 data-i18n="pricing.premium.name">Premium</h3>
                     <div class="price">
                         <span class="amount">€8.99</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="pricing.month">/month</span>
                     </div>
                     <ul class="pricing-features">
                         <li>✓ All Starter features (Unlimited)</li>
@@ -375,14 +382,14 @@
                         <li>✓ Temp Voice (3 channels)</li>
                         <li>✓ Template Creator (5/day)</li>
                     </ul>
-                    <a href="#support" class="btn btn-primary">Upgrade Now</a>
+                    <a href="#support" class="btn btn-primary" data-i18n="pricing.premium.btnText">Upgrade Now</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>VIP</h3>
+                    <h3 data-i18n="pricing.vip.name">VIP</h3>
                     <div class="price">
                         <span class="amount">€16.99</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="pricing.month">/month</span>
                     </div>
                     <ul class="pricing-features">
                         <li>✓ All Premium features</li>
@@ -399,14 +406,14 @@
                         <li>✓ VIP Badge</li>
                         <li>✓ Feature Requests</li>
                     </ul>
-                    <a href="#support" class="btn btn-outline">Upgrade Now</a>
+                    <a href="#support" class="btn btn-outline" data-i18n="pricing.vip.btnText">Upgrade Now</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Business</h3>
+                    <h3 data-i18n="pricing.business.name">Business</h3>
                     <div class="price">
                         <span class="amount">€39.99</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="pricing.month">/month</span>
                     </div>
                     <ul class="pricing-features">
                         <li>✓ All VIP features</li>
@@ -423,7 +430,7 @@
                         <li>✓ SLA Guarantee</li>
                         <li>✓ Training & Onboarding</li>
                     </ul>
-                    <a href="#support" class="btn btn-primary">Contact Sales</a>
+                    <a href="#support" class="btn btn-primary" data-i18n="pricing.business.btnText">Contact Sales</a>
                 </div>
             </div>
         </div>
@@ -433,13 +440,13 @@
     <section id="support" class="support">
         <div class="container">
             <div class="support-content">
-                <h2>Need Help?</h2>
-                <p>Join our support server for assistance, updates, and community</p>
+                <h2 data-i18n="support.title">Need Help?</h2>
+                <p data-i18n="support.subtitle">Join our support server for assistance, updates, and community</p>
                 <div class="support-buttons">
-                    <a href="YOUR_SUPPORT_SERVER_INVITE" class="btn btn-primary" target="_blank">
+                    <a href="YOUR_SUPPORT_SERVER_INVITE" class="btn btn-primary" target="_blank" data-i18n="support.btnServer">
                         💬 Join Support Server
                     </a>
-                    <a href="mailto:support@yourbot.com" class="btn btn-secondary">
+                    <a href="mailto:support@yourbot.com" class="btn btn-secondary" data-i18n="support.btnEmail">
                         📧 Email Support
                     </a>
                 </div>
@@ -453,28 +460,28 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>🛡️ Security Assistant</h4>
-                    <p>The ultimate Discord bot for your community</p>
+                    <p data-i18n="footer.tagline">The ultimate Discord bot for your community</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="#features">Features</a>
-                    <a href="#commands">Commands</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#support">Support</a>
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <a href="#features" data-i18n="nav.features">Features</a>
+                    <a href="#commands" data-i18n="nav.commands">Commands</a>
+                    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+                    <a href="#support" data-i18n="nav.support">Support</a>
                 </div>
                 <div class="footer-section">
-                    <h4>Legal</h4>
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
+                    <h4 data-i18n="footer.legal">Legal</h4>
+                    <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
+                    <h4 data-i18n="footer.connect">Connect</h4>
                     <a href="YOUR_SUPPORT_SERVER_INVITE" target="_blank">Discord</a>
                     <a href="https://github.com/your-username" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Security Assistant Bot. Made with ❤️ for Discord Communities</p>
+                <p data-i18n="footer.copyright">© 2025 Security Assistant Bot. Made with ❤️ for Discord Communities</p>
             </div>
         </div>
     </footer>

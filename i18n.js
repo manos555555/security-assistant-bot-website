@@ -1,0 +1,117 @@
+// i18n Manager for Website
+class I18nManager {
+    constructor() {
+        this.currentLang = this.getStoredLanguage() || 'en';
+        this.translations = translations;
+    }
+    
+    // Get stored language from localStorage
+    getStoredLanguage() {
+        return localStorage.getItem('website_language');
+    }
+    
+    // Store language preference
+    storeLanguage(lang) {
+        localStorage.setItem('website_language', lang);
+    }
+    
+    // Switch language
+    switchLanguage(lang) {
+        if (lang !== 'en' && lang !== 'el') {
+            console.error('Invalid language:', lang);
+            return;
+        }
+        
+        this.currentLang = lang;
+        this.storeLanguage(lang);
+        this.updatePage();
+        this.updateLanguageButtons();
+    }
+    
+    // Get translation by path (e.g., 'hero.title')
+    get(path) {
+        const keys = path.split('.');
+        let value = this.translations[this.currentLang];
+        
+        for (const key of keys) {
+            if (value && typeof value === 'object') {
+                value = value[key];
+            } else {
+                return path; // Return path if translation not found
+            }
+        }
+        
+        return value || path;
+    }
+    
+    // Update all page content
+    updatePage() {
+        // Update HTML lang attribute
+        document.documentElement.lang = this.currentLang;
+        
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const translation = this.get(key);
+            
+            if (translation) {
+                element.textContent = translation;
+            }
+        });
+        
+        // Update all elements with data-i18n-html attribute (for HTML content)
+        document.querySelectorAll('[data-i18n-html]').forEach(element => {
+            const key = element.getAttribute('data-i18n-html');
+            const translation = this.get(key);
+            
+            if (translation) {
+                element.innerHTML = translation;
+            }
+        });
+        
+        // Update placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            const translation = this.get(key);
+            
+            if (translation) {
+                element.placeholder = translation;
+            }
+        });
+    }
+    
+    // Update language button states
+    updateLanguageButtons() {
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            const btnLang = btn.getAttribute('data-lang');
+            if (btnLang === this.currentLang) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+    
+    // Initialize i18n
+    init() {
+        this.updatePage();
+        this.updateLanguageButtons();
+        
+        // Add event listeners to language buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const lang = btn.getAttribute('data-lang');
+                this.switchLanguage(lang);
+            });
+        });
+    }
+}
+
+// Create global i18n instance
+const i18n = new I18nManager();
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    i18n.init();
+});

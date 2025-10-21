@@ -1,0 +1,340 @@
+// Website Translations
+const translations = {
+    en: {
+        // Navigation
+        nav: {
+            features: "Features",
+            commands: "Commands",
+            pricing: "Pricing",
+            support: "Support"
+        },
+        
+        // Hero Section
+        hero: {
+            badge: "✨ Now with AI Integration",
+            title: "The Ultimate Discord Bot",
+            titleGradient: "for Your Community",
+            description: "Powerful security, intelligent moderation, engaging leveling system, AI assistant, music player, and 50+ features to supercharge your Discord server.",
+            highlight1: "🔥 AI-Powered Story System",
+            highlight2: "🚀 Automated Template Creator",
+            highlight3: "🎨 Image & GIF Generation",
+            btnAdd: "➕ Add to Discord",
+            btnLearn: "📖 Learn More",
+            stat1Number: "50+",
+            stat1Label: "Commands",
+            stat2Number: "24/7",
+            stat2Label: "Uptime",
+            stat3Number: "100%",
+            stat3Label: "Free"
+        },
+        
+        // Features Section
+        features: {
+            title: "Powerful Features",
+            subtitle: "Everything you need to manage and grow your Discord community",
+            
+            security: {
+                title: "Advanced Security",
+                desc: "Anti-raid protection, auto-moderation, verification system, and real-time threat detection to keep your server safe.",
+                items: ["Anti-raid system", "Auto-moderation", "Member verification", "Invite tracking"]
+            },
+            
+            leveling: {
+                title: "Leveling System",
+                desc: "Engage your community with XP, levels, achievements, leaderboards, and customizable rewards.",
+                items: ["XP & Level system", "50+ Achievements", "Custom rewards", "Leaderboards"]
+            },
+            
+            ai: {
+                badge: "⭐ Popular",
+                title: "AI Assistant",
+                desc: "Powered by Google Gemini AI for intelligent conversations, image generation, and smart assistance.",
+                items: ["Natural conversations", "Image generation", "Context awareness", "Multi-language"]
+            },
+            
+            story: {
+                badge: "🔥 Unique",
+                title: "Interactive Story System",
+                desc: "Create immersive role-playing stories with AI-powered narratives, multiple roles, and dynamic choices!",
+                items: ["AI-generated stories", "Multiple character roles", "Dynamic story progression", "Turn-based gameplay", "Story templates"]
+            },
+            
+            template: {
+                badge: "🚀 Revolutionary",
+                title: "AI Template Creator",
+                desc: "Generate complete Discord server templates with AI! Channels, roles, permissions - all automated!",
+                items: ["AI-powered generation", "Custom categories", "Auto role setup", "Permission templates", "One-click deployment"]
+            },
+            
+            music: {
+                title: "Music Player",
+                desc: "High-quality music streaming with playlist support, audio effects, and queue management.",
+                items: ["YouTube & Spotify", "Playlists", "Audio effects", "Queue system"]
+            },
+            
+            welcome: {
+                title: "Welcome System",
+                desc: "Customizable welcome messages, auto-roles, and member tracking to greet new members.",
+                items: ["Custom messages", "Auto-roles", "Welcome images", "DM welcome"]
+            },
+            
+            language: {
+                title: "Multi-Language",
+                desc: "Full support for English and Greek with easy language switching per server.",
+                items: ["English & Greek", "Per-server settings", "Easy switching", "Full translation"]
+            },
+            
+            analytics: {
+                title: "Analytics",
+                desc: "Community insights, activity tracking, and detailed statistics to understand your server.",
+                items: ["Activity tracking", "Member insights", "Command stats", "Growth metrics"]
+            },
+            
+            games: {
+                title: "Mini Games",
+                desc: "Fun games including trivia, hangman, math challenges, and more to entertain your community.",
+                items: ["Trivia games", "Hangman", "Math challenges", "Leaderboards"]
+            },
+            
+            roles: {
+                title: "Reaction Roles",
+                desc: "Easy role management with reaction roles and custom role menus.",
+                items: ["Reaction roles", "Custom menus", "Multiple roles", "Easy setup"]
+            }
+        },
+        
+        // Commands Section
+        commands: {
+            title: "Popular Commands",
+            subtitle: "Just a few of the 50+ commands available",
+            footer: "And 40+ more commands! Use",
+            footerHelp: "to see all commands.",
+            
+            security: "🔒 Security",
+            leveling: "🎮 Leveling",
+            ai: "🤖 AI",
+            music: "🎵 Music"
+        },
+        
+        // Pricing Section
+        pricing: {
+            title: "Simple Pricing",
+            subtitle: "Choose the plan that fits your community",
+            month: "/month",
+            
+            free: {
+                name: "Free",
+                btnText: "Get Started"
+            },
+            
+            starter: {
+                name: "Starter",
+                btnText: "Upgrade Now"
+            },
+            
+            premium: {
+                badge: "⭐ Best Value",
+                name: "Premium",
+                btnText: "Upgrade Now"
+            },
+            
+            vip: {
+                name: "VIP",
+                btnText: "Upgrade Now"
+            },
+            
+            business: {
+                name: "Business",
+                btnText: "Contact Sales"
+            }
+        },
+        
+        // Support Section
+        support: {
+            title: "Need Help?",
+            subtitle: "Join our support server for assistance, updates, and community",
+            btnServer: "💬 Join Support Server",
+            btnEmail: "📧 Email Support"
+        },
+        
+        // Footer
+        footer: {
+            tagline: "The ultimate Discord bot for your community",
+            quickLinks: "Quick Links",
+            legal: "Legal",
+            connect: "Connect",
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            copyright: "© 2025 Security Assistant Bot. Made with ❤️ for Discord Communities"
+        }
+    },
+    
+    el: {
+        // Navigation
+        nav: {
+            features: "Χαρακτηριστικά",
+            commands: "Εντολές",
+            pricing: "Τιμές",
+            support: "Υποστήριξη"
+        },
+        
+        // Hero Section
+        hero: {
+            badge: "✨ Τώρα με AI Integration",
+            title: "Το Απόλυτο Discord Bot",
+            titleGradient: "για την Κοινότητά σας",
+            description: "Ισχυρή ασφάλεια, έξυπνη διαχείριση, συναρπαστικό σύστημα επιπέδων, AI βοηθός, music player, και 50+ χαρακτηριστικά για να ενισχύσετε τον Discord server σας.",
+            highlight1: "🔥 AI Σύστημα Ιστοριών",
+            highlight2: "🚀 Αυτόματος Δημιουργός Templates",
+            highlight3: "🎨 Δημιουργία Εικόνων & GIF",
+            btnAdd: "➕ Προσθήκη στο Discord",
+            btnLearn: "📖 Μάθετε Περισσότερα",
+            stat1Number: "50+",
+            stat1Label: "Εντολές",
+            stat2Number: "24/7",
+            stat2Label: "Διαθεσιμότητα",
+            stat3Number: "100%",
+            stat3Label: "Δωρεάν"
+        },
+        
+        // Features Section
+        features: {
+            title: "Ισχυρά Χαρακτηριστικά",
+            subtitle: "Όλα όσα χρειάζεστε για να διαχειριστείτε και να αναπτύξετε την Discord κοινότητά σας",
+            
+            security: {
+                title: "Προηγμένη Ασφάλεια",
+                desc: "Προστασία anti-raid, αυτόματη διαχείριση, σύστημα επαλήθευσης και ανίχνευση απειλών σε πραγματικό χρόνο.",
+                items: ["Σύστημα anti-raid", "Αυτόματη διαχείριση", "Επαλήθευση μελών", "Παρακολούθηση προσκλήσεων"]
+            },
+            
+            leveling: {
+                title: "Σύστημα Επιπέδων",
+                desc: "Εμπλέξτε την κοινότητά σας με XP, επίπεδα, επιτεύγματα, leaderboards και προσαρμόσιμες ανταμοιβές.",
+                items: ["Σύστημα XP & Επιπέδων", "50+ Επιτεύγματα", "Προσαρμοσμένες ανταμοιβές", "Leaderboards"]
+            },
+            
+            ai: {
+                badge: "⭐ Δημοφιλές",
+                title: "AI Βοηθός",
+                desc: "Τροφοδοτείται από Google Gemini AI για έξυπνες συνομιλίες, δημιουργία εικόνων και έξυπνη βοήθεια.",
+                items: ["Φυσικές συνομιλίες", "Δημιουργία εικόνων", "Συνειδητοποίηση πλαισίου", "Πολυγλωσσικό"]
+            },
+            
+            story: {
+                badge: "🔥 Μοναδικό",
+                title: "Διαδραστικό Σύστημα Ιστοριών",
+                desc: "Δημιουργήστε καθηλωτικές ιστορίες role-playing με AI αφηγήσεις, πολλαπλούς ρόλους και δυναμικές επιλογές!",
+                items: ["AI ιστορίες", "Πολλαπλοί ρόλοι χαρακτήρων", "Δυναμική εξέλιξη ιστορίας", "Turn-based gameplay", "Story templates"]
+            },
+            
+            template: {
+                badge: "🚀 Επαναστατικό",
+                title: "AI Δημιουργός Templates",
+                desc: "Δημιουργήστε πλήρη Discord server templates με AI! Κανάλια, ρόλοι, δικαιώματα - όλα αυτόματα!",
+                items: ["AI δημιουργία", "Προσαρμοσμένες κατηγορίες", "Αυτόματη ρύθμιση ρόλων", "Permission templates", "Εγκατάσταση με ένα κλικ"]
+            },
+            
+            music: {
+                title: "Music Player",
+                desc: "Υψηλής ποιότητας streaming μουσικής με υποστήριξη playlists, ηχητικά εφέ και διαχείριση ουράς.",
+                items: ["YouTube & Spotify", "Playlists", "Ηχητικά εφέ", "Σύστημα ουράς"]
+            },
+            
+            welcome: {
+                title: "Σύστημα Καλωσορίσματος",
+                desc: "Προσαρμόσιμα μηνύματα καλωσορίσματος, αυτόματοι ρόλοι και παρακολούθηση μελών.",
+                items: ["Προσαρμοσμένα μηνύματα", "Αυτόματοι ρόλοι", "Εικόνες καλωσορίσματος", "DM καλωσόρισμα"]
+            },
+            
+            language: {
+                title: "Πολυγλωσσικό",
+                desc: "Πλήρης υποστήριξη για Αγγλικά και Ελληνικά με εύκολη αλλαγή γλώσσας ανά server.",
+                items: ["Αγγλικά & Ελληνικά", "Ρυθμίσεις ανά server", "Εύκολη αλλαγή", "Πλήρης μετάφραση"]
+            },
+            
+            analytics: {
+                title: "Αναλυτικά",
+                desc: "Insights κοινότητας, παρακολούθηση δραστηριότητας και λεπτομερή στατιστικά.",
+                items: ["Παρακολούθηση δραστηριότητας", "Insights μελών", "Στατιστικά εντολών", "Μετρήσεις ανάπτυξης"]
+            },
+            
+            games: {
+                title: "Mini Games",
+                desc: "Διασκεδαστικά παιχνίδια όπως trivia, hangman, math challenges και άλλα.",
+                items: ["Trivia games", "Hangman", "Math challenges", "Leaderboards"]
+            },
+            
+            roles: {
+                title: "Reaction Roles",
+                desc: "Εύκολη διαχείριση ρόλων με reaction roles και προσαρμοσμένα μενού ρόλων.",
+                items: ["Reaction roles", "Προσαρμοσμένα μενού", "Πολλαπλοί ρόλοι", "Εύκολη ρύθμιση"]
+            }
+        },
+        
+        // Commands Section
+        commands: {
+            title: "Δημοφιλείς Εντολές",
+            subtitle: "Μερικές από τις 50+ διαθέσιμες εντολές",
+            footer: "Και 40+ ακόμα εντολές! Χρησιμοποιήστε",
+            footerHelp: "για να δείτε όλες τις εντολές.",
+            
+            security: "🔒 Ασφάλεια",
+            leveling: "🎮 Επίπεδα",
+            ai: "🤖 AI",
+            music: "🎵 Μουσική"
+        },
+        
+        // Pricing Section
+        pricing: {
+            title: "Απλές Τιμές",
+            subtitle: "Επιλέξτε το πλάνο που ταιριάζει στην κοινότητά σας",
+            month: "/μήνα",
+            
+            free: {
+                name: "Δωρεάν",
+                btnText: "Ξεκινήστε"
+            },
+            
+            starter: {
+                name: "Starter",
+                btnText: "Αναβάθμιση Τώρα"
+            },
+            
+            premium: {
+                badge: "⭐ Καλύτερη Αξία",
+                name: "Premium",
+                btnText: "Αναβάθμιση Τώρα"
+            },
+            
+            vip: {
+                name: "VIP",
+                btnText: "Αναβάθμιση Τώρα"
+            },
+            
+            business: {
+                name: "Business",
+                btnText: "Επικοινωνία Πωλήσεων"
+            }
+        },
+        
+        // Support Section
+        support: {
+            title: "Χρειάζεστε Βοήθεια;",
+            subtitle: "Μπείτε στον support server μας για βοήθεια, ενημερώσεις και κοινότητα",
+            btnServer: "💬 Μπείτε στον Support Server",
+            btnEmail: "📧 Email Υποστήριξη"
+        },
+        
+        // Footer
+        footer: {
+            tagline: "Το απόλυτο Discord bot για την κοινότητά σας",
+            quickLinks: "Γρήγοροι Σύνδεσμοι",
+            legal: "Νομικά",
+            connect: "Σύνδεση",
+            privacy: "Πολιτική Απορρήτου",
+            terms: "Όροι Χρήσης",
+            copyright: "© 2025 Security Assistant Bot. Φτιαγμένο με ❤️ για Discord Κοινότητες"
+        }
+    }
+};
