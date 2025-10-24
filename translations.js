@@ -107,8 +107,7 @@ const translations = {
         commands: {
             title: "Popular Commands",
             subtitle: "Just a few of the 50+ commands available",
-            footer: "And 40+ more commands! Use",
-            footerHelp: "to see all commands.",
+            footer: "And 40+ more commands! Use !commands to see all commands.",
             
             security: "🔒 Security",
             leveling: "🎮 Leveling",
@@ -338,8 +337,7 @@ const translations = {
         commands: {
             title: "Δημοφιλείς Εντολές",
             subtitle: "Μερικές από τις 50+ διαθέσιμες εντολές",
-            footer: "Και 40+ ακόμα εντολές! Χρησιμοποιήστε",
-            footerHelp: "για να δείτε όλες τις εντολές.",
+            footer: "Και 40+ ακόμα εντολές! Χρησιμοποιήστε !commands για να δείτε όλες τις εντολές.",
             
             security: "🔒 Ασφάλεια",
             leveling: "🎮 Επίπεδα",
