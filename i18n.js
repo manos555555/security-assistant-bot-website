@@ -78,6 +78,36 @@ class I18nManager {
                 element.placeholder = translation;
             }
         });
+        
+        // Update pricing features
+        this.updatePricingFeatures();
+    }
+    
+    // Update pricing features based on language
+    updatePricingFeatures() {
+        const tiers = ['starter', 'premium', 'vip', 'business'];
+        const pricingCards = document.querySelectorAll('.pricing-card');
+        
+        tiers.forEach((tier, index) => {
+            const card = pricingCards[index + 1]; // +1 to skip FREE tier
+            if (!card) return;
+            
+            const featuresList = card.querySelector('.pricing-features');
+            if (!featuresList) return;
+            
+            const features = this.get(`pricing.${tier}.features`);
+            if (features && Array.isArray(features)) {
+                // Clear existing features
+                featuresList.innerHTML = '';
+                
+                // Add new features
+                features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.textContent = feature;
+                    featuresList.appendChild(li);
+                });
+            }
+        });
     }
     
     // Update language button states

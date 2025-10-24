@@ -129,23 +129,84 @@ const translations = {
             
             starter: {
                 name: "Starter",
-                btnText: "Upgrade Now"
+                btnText: "Upgrade Now",
+                features: [
+                    "🎵 Music: 10 songs/day",
+                    "🤖 AI Assistant: 10/day",
+                    "🤖 AI Server: 5/day",
+                    "📖 Story System: 5/day",
+                    "🧠 Memory: 10/day",
+                    "🖼️ Image Gen: 3/day",
+                    "🎬 GIF Gen: 2/day",
+                    "🎮 Mini Games: Basic",
+                    "✨ All FREE features: UNLIMITED"
+                ]
             },
             
             premium: {
                 badge: "⭐ Best Value",
                 name: "Premium",
-                btnText: "Upgrade Now"
+                btnText: "Upgrade Now",
+                features: [
+                    "🎵 Music: UNLIMITED",
+                    "🤖 AI Assistant: 30/day",
+                    "🤖 AI Server: 10/day",
+                    "📖 Story: UNLIMITED",
+                    "🧠 Memory: UNLIMITED",
+                    "🖼️ Image Gen: 10/day",
+                    "🎬 GIF Gen: 5/day",
+                    "🔍 Torrent: 20/day",
+                    "🛡️ Anti-Raid",
+                    "👮 Moderation",
+                    "👋 Welcome System",
+                    "🧠 Community Brain",
+                    "📝 Templates: 5/day",
+                    "🍕 Food: 10/day",
+                    "🔊 TTS: 20/day",
+                    "🎙️ Temp Voice: 3 ch",
+                    "🎮 Mini Games: All",
+                    "🛠️ Admin Commands"
+                ]
             },
             
             vip: {
                 name: "VIP",
-                btnText: "Upgrade Now"
+                btnText: "Upgrade Now",
+                features: [
+                    "✨ All Premium Features",
+                    "🤖 AI: UNLIMITED",
+                    "🖼️ Image Gen: UNLIMITED",
+                    "🎬 GIF Gen: UNLIMITED",
+                    "🔍 Torrent: UNLIMITED",
+                    "🍕 Food: UNLIMITED",
+                    "📝 Templates: UNLIMITED",
+                    "🔊 TTS: UNLIMITED",
+                    "🎙️ Temp Voice: UNLIMITED",
+                    "⚡ Priority Support",
+                    "🎨 Custom Branding",
+                    "🔧 Custom Commands",
+                    "📊 Advanced Analytics",
+                    "🚀 Early Access"
+                ]
             },
             
             business: {
                 name: "Business",
-                btnText: "Contact Sales"
+                btnText: "Contact Sales",
+                features: [
+                    "✨ All VIP Features",
+                    "🤖 AI: UNLIMITED for all",
+                    "👥 Multi-Admin Support",
+                    "📊 Advanced Analytics",
+                    "🔒 Enhanced Security",
+                    "📞 24/7 Priority Support",
+                    "🎯 Account Manager",
+                    "📈 Business Reports",
+                    "⏱️ SLA Guarantee (99.9%)",
+                    "🚀 Priority Queue",
+                    "* Custom Integrations & Development",
+                    "  Contact support for custom solutions"
+                ]
             }
         },
         
@@ -163,6 +224,7 @@ const translations = {
             quickLinks: "Quick Links",
             legal: "Legal",
             connect: "Connect",
+            voteForUs: "⭐ Vote for Us",
             privacy: "Privacy Policy",
             terms: "Terms of Service",
             copyright: "© 2025 Security Assistant Bot. Made with ❤️ for Discord Communities"
@@ -298,23 +360,84 @@ const translations = {
             
             starter: {
                 name: "Starter",
-                btnText: "Αναβάθμιση Τώρα"
+                btnText: "Αναβάθμιση Τώρα",
+                features: [
+                    "🎵 Music: 10 τραγούδια/ημέρα",
+                    "🤖 AI Assistant: 10/ημέρα",
+                    "🤖 AI Server: 5/ημέρα",
+                    "📖 Story System: 5/ημέρα",
+                    "🧠 Memory: 10/ημέρα",
+                    "🖼️ Image Gen: 3/ημέρα",
+                    "🎬 GIF Gen: 2/ημέρα",
+                    "🎮 Mini Games: Basic",
+                    "✨ Όλα τα FREE: ΑΠΕΡΙΟΡΙΣΤΑ"
+                ]
             },
             
             premium: {
                 badge: "⭐ Καλύτερη Αξία",
                 name: "Premium",
-                btnText: "Αναβάθμιση Τώρα"
+                btnText: "Αναβάθμιση Τώρα",
+                features: [
+                    "🎵 Music: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🤖 AI Assistant: 30/ημέρα",
+                    "🤖 AI Server: 10/ημέρα",
+                    "📖 Story: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🧠 Memory: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🖼️ Image Gen: 10/ημέρα",
+                    "🎬 GIF Gen: 5/ημέρα",
+                    "🔍 Torrent: 20/ημέρα",
+                    "🛡️ Anti-Raid",
+                    "👮 Moderation",
+                    "👋 Welcome System",
+                    "🧠 Community Brain",
+                    "📝 Templates: 5/ημέρα",
+                    "🍕 Food: 10/ημέρα",
+                    "🔊 TTS: 20/ημέρα",
+                    "🎙️ Temp Voice: 3 ch",
+                    "🎮 Mini Games: Όλα",
+                    "🛠️ Admin Commands"
+                ]
             },
             
             vip: {
                 name: "VIP",
-                btnText: "Αναβάθμιση Τώρα"
+                btnText: "Αναβάθμιση Τώρα",
+                features: [
+                    "✨ Όλα τα Premium",
+                    "🤖 AI: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🖼️ Image Gen: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🎬 GIF Gen: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🔍 Torrent: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🍕 Food: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "📝 Templates: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🔊 TTS: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "🎙️ Temp Voice: ΑΠΕΡΙΟΡΙΣΤΑ",
+                    "⚡ Priority Support",
+                    "🎨 Custom Branding",
+                    "🔧 Custom Commands",
+                    "📊 Advanced Analytics",
+                    "🚀 Early Access"
+                ]
             },
             
             business: {
                 name: "Business",
-                btnText: "Επικοινωνία Πωλήσεων"
+                btnText: "Επικοινωνία Πωλήσεων",
+                features: [
+                    "✨ Όλα τα VIP",
+                    "🤖 AI: ΑΠΕΡΙΟΡΙΣΤΟ για όλους",
+                    "👥 Multi-Admin Support",
+                    "📊 Advanced Analytics",
+                    "🔒 Enhanced Security",
+                    "📞 24/7 Priority Support",
+                    "🎯 Account Manager",
+                    "📈 Business Reports",
+                    "⏱️ SLA Guarantee (99.9%)",
+                    "🚀 Priority Queue",
+                    "* Custom Integrations & Development",
+                    "  Επικοινωνία για custom λύσεις"
+                ]
             }
         },
         
@@ -332,6 +455,7 @@ const translations = {
             quickLinks: "Γρήγοροι Σύνδεσμοι",
             legal: "Νομικά",
             connect: "Σύνδεση",
+            voteForUs: "⭐ Ψηφίστε μας",
             privacy: "Πολιτική Απορρήτου",
             terms: "Όροι Χρήσης",
             copyright: "© 2025 Security Assistant Bot. Φτιαγμένο με ❤️ για Discord Κοινότητες"
