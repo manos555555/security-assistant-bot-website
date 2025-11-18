@@ -123,7 +123,21 @@ const translations = {
             
             free: {
                 name: "Free",
-                btnText: "Get Started"
+                btnText: "Get Started",
+                features: [
+                    "✓ Basic Commands",
+                    "✓ Reaction Roles (Full)",
+                    "✓ Levels System (8/day)",
+                    "✓ Help & Info",
+                    "✓ Weather (3/day)",
+                    "✓ Search (5/day)",
+                    "✓ Basic Memory (15/day)",
+                    "✗ Music System",
+                    "✗ AI Assistant",
+                    "✗ Moderation",
+                    "✗ Anti-Raid",
+                    "✗ Mini Games"
+                ]
             },
             
             starter: {
@@ -353,7 +367,21 @@ const translations = {
             
             free: {
                 name: "Δωρεάν",
-                btnText: "Ξεκινήστε"
+                btnText: "Ξεκινήστε",
+                features: [
+                    "✓ Βασικές Εντολές",
+                    "✓ Reaction Roles (Πλήρες)",
+                    "✓ Σύστημα Επιπέδων (8/ημέρα)",
+                    "✓ Βοήθεια & Πληροφορίες",
+                    "✓ Καιρός (3/ημέρα)",
+                    "✓ Αναζήτηση (5/ημέρα)",
+                    "✓ Βασική Μνήμη (15/ημέρα)",
+                    "✗ Σύστημα Μουσικής",
+                    "✗ AI Assistant",
+                    "✗ Moderation",
+                    "✗ Anti-Raid",
+                    "✗ Mini Games"
+                ]
             },
             
             starter: {
