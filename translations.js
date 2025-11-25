@@ -66,6 +66,13 @@ const translations = {
                 items: ["AI-powered generation", "Custom categories", "Auto role setup", "Permission templates", "One-click deployment"]
             },
             
+            agent: {
+                badge: "🆕 NEW",
+                title: "AI Agent",
+                desc: "Execute any Discord task with natural language! Just tell the AI what you want and it does it automatically.",
+                items: ["Natural language commands", "Create channels & roles", "User moderation", "Complex automations", "Jail & verification systems"]
+            },
+            
             music: {
                 title: "Music Player",
                 desc: "High-quality music streaming with playlist support, audio effects, and queue management.",
@@ -308,6 +315,13 @@ const translations = {
                 title: "AI Δημιουργός Templates",
                 desc: "Δημιουργήστε πλήρη Discord server templates με AI! Κανάλια, ρόλοι, δικαιώματα - όλα αυτόματα!",
                 items: ["AI δημιουργία", "Προσαρμοσμένες κατηγορίες", "Αυτόματη ρύθμιση ρόλων", "Permission templates", "Εγκατάσταση με ένα κλικ"]
+            },
+            
+            agent: {
+                badge: "🆕 ΝΕΟ",
+                title: "AI Agent",
+                desc: "Εκτέλεσε οποιαδήποτε εργασία στο Discord με φυσική γλώσσα! Απλά πες στο AI τι θέλεις και το κάνει αυτόματα.",
+                items: ["Εντολές φυσικής γλώσσας", "Δημιουργία καναλιών & ρόλων", "Διαχείριση χρηστών", "Σύνθετες αυτοματοποιήσεις", "Συστήματα φυλακής & επαλήθευσης"]
             },
             
             music: {
