@@ -267,79 +267,143 @@
         <div class="container">
             <div class="section-header">
                 <h2 data-i18n="commands.title">Popular Commands</h2>
-                <p data-i18n="commands.subtitle">Just a few of the 50+ commands available</p>
+                <p data-i18n="commands.subtitle">Over 150+ commands across 20+ categories</p>
             </div>
 
             <div class="commands-grid">
+                <!-- Row 1 -->
                 <div class="command-category">
-                    <h3 data-i18n="commands.security">🔒 Security</h3>
-                    <div class="command-item">
-                        <code>!antiraid enable</code>
-                        <span>Enable anti-raid protection</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!lockdown</code>
-                        <span>Lock all channels</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!verify</code>
-                        <span>Member verification</span>
-                    </div>
+                    <h3>🤖 AI Assistant</h3>
+                    <div class="command-item"><code>!ask [question]</code><span>Ask AI anything</span></div>
+                    <div class="command-item"><code>!agent [task]</code><span>AI executes Discord tasks</span></div>
+                    <div class="command-item"><code>!admin</code><span>AI Server Assistant panel</span></div>
+                    <div class="command-item"><code>!setname [name]</code><span>Set your AI name</span></div>
                 </div>
 
                 <div class="command-category">
-                    <h3 data-i18n="commands.leveling">🎮 Leveling</h3>
-                    <div class="command-item">
-                        <code>!rank</code>
-                        <span>Check your rank</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!leaderboard</code>
-                        <span>Server leaderboard</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!achievements</code>
-                        <span>View achievements</span>
-                    </div>
+                    <h3>🎵 Music</h3>
+                    <div class="command-item"><code>!play [song]</code><span>Play from YouTube/URL</span></div>
+                    <div class="command-item"><code>!queue</code><span>View music queue</span></div>
+                    <div class="command-item"><code>!skip</code><span>Skip current song</span></div>
+                    <div class="command-item"><code>!pause / !resume</code><span>Control playback</span></div>
                 </div>
 
                 <div class="command-category">
-                    <h3 data-i18n="commands.ai">🤖 AI</h3>
-                    <div class="command-item">
-                        <code>!ai [question]</code>
-                        <span>Ask AI anything</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!imagine [prompt]</code>
-                        <span>Generate images</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!chat</code>
-                        <span>Start conversation</span>
-                    </div>
+                    <h3>🎮 Leveling</h3>
+                    <div class="command-item"><code>!rank [@user]</code><span>Check rank & XP</span></div>
+                    <div class="command-item"><code>!leaderboard</code><span>Server leaderboard</span></div>
+                    <div class="command-item"><code>!achievements</code><span>View achievements</span></div>
+                    <div class="command-item"><code>!stats</code><span>Detailed statistics</span></div>
                 </div>
 
                 <div class="command-category">
-                    <h3 data-i18n="commands.music">🎵 Music</h3>
-                    <div class="command-item">
-                        <code>!play [song]</code>
-                        <span>Play music</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!queue</code>
-                        <span>View queue</span>
-                    </div>
-                    <div class="command-item">
-                        <code>!skip</code>
-                        <span>Skip current song</span>
-                    </div>
+                    <h3>📖 Story System</h3>
+                    <div class="command-item"><code>!new</code><span>Create new story</span></div>
+                    <div class="command-item"><code>!roles</code><span>View character roles</span></div>
+                    <div class="command-item"><code>!do_action [action]</code><span>Perform story action</span></div>
+                    <div class="command-item"><code>/enable_autopilot</code><span>AI plays for you</span></div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="command-category">
+                    <h3>🛡️ Security</h3>
+                    <div class="command-item"><code>!antiraid enable</code><span>Anti-raid protection</span></div>
+                    <div class="command-item"><code>!toxicity enable</code><span>AI toxicity filter</span></div>
+                    <div class="command-item"><code>!purge [amount]</code><span>Bulk delete messages</span></div>
+                    <div class="command-item"><code>!lockdown</code><span>Lock all channels</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>🖼️ Image Generation</h3>
+                    <div class="command-item"><code>!generate_image [prompt]</code><span>Create AI images</span></div>
+                    <div class="command-item"><code>!generate_gif [prompt]</code><span>Create animated GIFs</span></div>
+                    <div class="command-item"><code>!advanced_image</code><span>Advanced options</span></div>
+                    <div class="command-item"><code>!animate_image</code><span>Animate existing image</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>👋 Welcome System</h3>
+                    <div class="command-item"><code>!welcome setup #ch</code><span>Set welcome channel</span></div>
+                    <div class="command-item"><code>!welcome message</code><span>Custom message</span></div>
+                    <div class="command-item"><code>!welcome autorole</code><span>Auto-assign role</span></div>
+                    <div class="command-item"><code>!welcome ai</code><span>AI-generated welcomes</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>🎫 Tickets</h3>
+                    <div class="command-item"><code>!ticket setup</code><span>Setup ticket system</span></div>
+                    <div class="command-item"><code>!ticket panel</code><span>Send ticket panel</span></div>
+                    <div class="command-item"><code>!ticket addcat</code><span>Add category</span></div>
+                    <div class="command-item"><code>!ticket role</code><span>Set support role</span></div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="command-category">
+                    <h3>📊 Invite Tracker</h3>
+                    <div class="command-item"><code>!invites [@user]</code><span>Check invite count</span></div>
+                    <div class="command-item"><code>!inviteleaderboard</code><span>Top inviters</span></div>
+                    <div class="command-item"><code>!invitestats</code><span>Detailed stats</span></div>
+                    <div class="command-item"><code>!bonusinvites</code><span>Add bonus invites</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>🎲 Mini Games</h3>
+                    <div class="command-item"><code>!game trivia</code><span>Trivia questions</span></div>
+                    <div class="command-item"><code>!game hangman</code><span>Word guessing</span></div>
+                    <div class="command-item"><code>!game math</code><span>Math challenges</span></div>
+                    <div class="command-item"><code>!game reaction</code><span>Reaction speed test</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>📝 Templates</h3>
+                    <div class="command-item"><code>!template create</code><span>AI creates server template</span></div>
+                    <div class="command-item"><code>!template list</code><span>View saved templates</span></div>
+                    <div class="command-item"><code>!template apply</code><span>Apply to server</span></div>
+                    <div class="command-item"><code>!template delete</code><span>Delete template</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>🧠 Community Brain</h3>
+                    <div class="command-item"><code>!brain status</code><span>Brain status</span></div>
+                    <div class="command-item"><code>!brain mood</code><span>Community mood</span></div>
+                    <div class="command-item"><code>!brain insights</code><span>AI insights</span></div>
+                    <div class="command-item"><code>!brain predict</code><span>Predictions</span></div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="command-category">
+                    <h3>🎭 Reaction Roles</h3>
+                    <div class="command-item"><code>!quickaddrole</code><span>Quick setup</span></div>
+                    <div class="command-item"><code>!listroles</code><span>View all roles</span></div>
+                    <div class="command-item"><code>!removerole</code><span>Remove role</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>🎙️ Temp Voice</h3>
+                    <div class="command-item"><code>!tempvoice setup</code><span>Setup system</span></div>
+                    <div class="command-item"><code>!tempvoice create</code><span>Create channel</span></div>
+                    <div class="command-item"><code>!tempvoice lock</code><span>Lock channel</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>🍕 Food & Recipes</h3>
+                    <div class="command-item"><code>!food</code><span>Food suggestions</span></div>
+                    <div class="command-item"><code>!recipe [dish]</code><span>Get recipe</span></div>
+                </div>
+
+                <div class="command-category">
+                    <h3>🔧 Utilities</h3>
+                    <div class="command-item"><code>!help</code><span>Help menu</span></div>
+                    <div class="command-item"><code>!weather [city]</code><span>Weather info</span></div>
+                    <div class="command-item"><code>!search [query]</code><span>Web search</span></div>
+                    <div class="command-item"><code>!language</code><span>Change language</span></div>
                 </div>
             </div>
 
             <div class="commands-footer">
-                <p>And 70+ more commands!</p>
+                <p>And many more! Use <code>!commands</code> in Discord to see all available commands.</p>
                 <a href="commands.html" class="btn btn-primary" style="margin-top: 20px;">
-                    📚 View All Commands
+                    📚 View Complete Command List
                 </a>
             </div>
         </div>
