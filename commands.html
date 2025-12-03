@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Security Assistant Bot - Complete Command List">
+    <title>🛡️ Security Assistant - All Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="language-switcher.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <style>
+        .commands-page {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+        .commands-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .commands-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .commands-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .commands-header p {
+            color: var(--text-muted);
+            font-size: 1.1em;
+        }
+        .category-section {
+            margin-bottom: 40px;
+            background: var(--surface);
+            border-radius: 15px;
+            padding: 25px;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .category-header h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .category-header .tier-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+        .tier-free { background: #43B581; color: white; }
+        .tier-starter { background: #FAA61A; color: white; }
+        .tier-premium { background: #5865F2; color: white; }
+        .tier-business { background: #9B59B6; color: white; }
+        .commands-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .commands-table th,
+        .commands-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .commands-table th {
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        .commands-table tr:hover {
+            background: rgba(255,255,255,0.02);
+        }
+        .commands-table code {
+            background: var(--surface-light);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-family: 'Consolas', monospace;
+            color: var(--secondary);
+        }
+        .commands-table .desc {
+            color: var(--text-muted);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 40px;
+            display: block;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 30px;
+            border: 2px solid var(--surface-light);
+            background: var(--surface);
+            color: var(--text);
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .search-box input:focus {
+            border-color: var(--primary);
+        }
+        .search-box input::placeholder {
+            color: var(--text-muted);
+        }
+        .command-count {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">Security Assistant</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="index.html#support">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="commands-page">
+        <div class="commands-container">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            
+            <div class="commands-header">
+                <h1>📚 Complete Command List</h1>
+                <p>All 80+ commands available in Security Assistant Bot</p>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="command-search" placeholder="🔍 Search commands...">
+            </div>
+
+            <p class="command-count">Showing <span id="visible-count">80</span> commands</p>
+
+            <!-- AI & Assistant -->
+            <div class="category-section" data-category="ai">
+                <div class="category-header">
+                    <h2>🤖 AI & Assistant</h2>
+                    <span class="tier-badge tier-starter">STARTER+</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!ask [question]</code></td><td class="desc">Ask the AI assistant anything</td></tr>
+                        <tr><td><code>!setname [name]</code></td><td class="desc">Set your display name for the AI</td></tr>
+                        <tr><td><code>!clear</code></td><td class="desc">Clear your conversation history</td></tr>
+                        <tr><td><code>!agent [task]</code></td><td class="desc">🤖 AI Agent - Execute tasks with natural language (BUSINESS)</td></tr>
+                        <tr><td><code>!admin [request]</code></td><td class="desc">AI Server Assistant for admin tasks</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Music -->
+            <div class="category-section" data-category="music">
+                <div class="category-header">
+                    <h2>🎵 Music</h2>
+                    <span class="tier-badge tier-starter">STARTER+</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!play [song/url]</code></td><td class="desc">Play a song from YouTube or URL</td></tr>
+                        <tr><td><code>!join</code></td><td class="desc">Join your voice channel</td></tr>
+                        <tr><td><code>!leave</code></td><td class="desc">Leave the voice channel</td></tr>
+                        <tr><td><code>!pause</code></td><td class="desc">Pause the current song</td></tr>
+                        <tr><td><code>!resume</code></td><td class="desc">Resume playback</td></tr>
+                        <tr><td><code>!skip</code></td><td class="desc">Skip to the next song</td></tr>
+                        <tr><td><code>!stop</code></td><td class="desc">Stop playback and clear queue</td></tr>
+                        <tr><td><code>!queue</code></td><td class="desc">View the current queue</td></tr>
+                        <tr><td><code>!now</code></td><td class="desc">Show currently playing song</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Leveling System -->
+            <div class="category-section" data-category="levels">
+                <div class="category-header">
+                    <h2>🎮 Leveling System</h2>
+                    <span class="tier-badge tier-premium">PREMIUM</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!rank [@user]</code></td><td class="desc">Check your or someone's rank</td></tr>
+                        <tr><td><code>!leaderboard</code></td><td class="desc">View server leaderboard</td></tr>
+                        <tr><td><code>!achievements</code></td><td class="desc">View your achievements</td></tr>
+                        <tr><td><code>!stats [@user]</code></td><td class="desc">View detailed statistics</td></tr>
+                        <tr><td><code>!give_xp @user [amount]</code></td><td class="desc">Give XP to a user (Admin)</td></tr>
+                        <tr><td><code>!resetxp @user</code></td><td class="desc">Reset user's XP (Admin)</td></tr>
+                        <tr><td><code>!set_levelup_channel #channel</code></td><td class="desc">Set level-up notification channel</td></tr>
+                        <tr><td><code>!clear_levelup_channel</code></td><td class="desc">Clear level-up channel</td></tr>
+                        <tr><td><code>!show_levelup_channel</code></td><td class="desc">Show current level-up channel</td></tr>
+                        <tr><td><code>!levels_toggle</code></td><td class="desc">Enable/disable leveling system</td></tr>
+                        <tr><td><code>!levels_status</code></td><td class="desc">Check leveling system status</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Story System -->
+            <div class="category-section" data-category="story">
+                <div class="category-header">
+                    <h2>📖 Interactive Story System</h2>
+                    <span class="tier-badge tier-starter">STARTER+</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!new</code></td><td class="desc">Create a new story</td></tr>
+                        <tr><td><code>!roles</code></td><td class="desc">View available character roles</td></tr>
+                        <tr><td><code>!choose_role [role]</code></td><td class="desc">Select your character role</td></tr>
+                        <tr><td><code>!begin_story</code></td><td class="desc">Start the story</td></tr>
+                        <tr><td><code>!do_action [action]</code></td><td class="desc">Perform an action in the story</td></tr>
+                        <tr><td><code>!story_details</code></td><td class="desc">View current story info</td></tr>
+                        <tr><td><code>!finish_story</code></td><td class="desc">End the current story</td></tr>
+                        <tr><td><code>/new_story</code></td><td class="desc">Create new story (slash)</td></tr>
+                        <tr><td><code>/act [action]</code></td><td class="desc">Perform action (slash)</td></tr>
+                        <tr><td><code>/enable_autopilot @user</code></td><td class="desc">Enable AI autopilot for player</td></tr>
+                        <tr><td><code>/disable_autopilot @user</code></td><td class="desc">Disable AI autopilot</td></tr>
+                        <tr><td><code>/autopilot_status</code></td><td class="desc">Check autopilot status</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Image Generation -->
+            <div class="category-section" data-category="images">
+                <div class="category-header">
+                    <h2>🖼️ Image & GIF Generation</h2>
+                    <span class="tier-badge tier-starter">STARTER+</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!generate_image [prompt]</code></td><td class="desc">Generate an image from text</td></tr>
+                        <tr><td><code>!advanced_image [prompt]</code></td><td class="desc">Advanced image generation with options</td></tr>
+                        <tr><td><code>!image_help</code></td><td class="desc">Image generation help</td></tr>
+                        <tr><td><code>!generate_gif [prompt]</code></td><td class="desc">Generate an animated GIF</td></tr>
+                        <tr><td><code>!animate_image [prompt]</code></td><td class="desc">Animate an existing image</td></tr>
+                        <tr><td><code>!gif_help</code></td><td class="desc">GIF generation help</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Security & Moderation -->
+            <div class="category-section" data-category="security">
+                <div class="category-header">
+                    <h2>🛡️ Security & Moderation</h2>
+                    <span class="tier-badge tier-premium">PREMIUM</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!antiraid</code></td><td class="desc">Anti-raid protection settings</td></tr>
+                        <tr><td><code>!antiraid enable</code></td><td class="desc">Enable anti-raid protection</td></tr>
+                        <tr><td><code>!antiraid disable</code></td><td class="desc">Disable anti-raid protection</td></tr>
+                        <tr><td><code>!antiraid status</code></td><td class="desc">Check anti-raid status</td></tr>
+                        <tr><td><code>!purge [amount]</code></td><td class="desc">Delete messages in bulk</td></tr>
+                        <tr><td><code>!purge_user @user [amount]</code></td><td class="desc">Delete messages from specific user</td></tr>
+                        <tr><td><code>!purge_id [user_id] [amount]</code></td><td class="desc">Delete messages by user ID</td></tr>
+                        <tr><td><code>!toxicity</code></td><td class="desc">Toxicity filter settings</td></tr>
+                        <tr><td><code>!toxicity enable</code></td><td class="desc">Enable toxicity filter</td></tr>
+                        <tr><td><code>!toxicity disable</code></td><td class="desc">Disable toxicity filter</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Welcome System -->
+            <div class="category-section" data-category="welcome">
+                <div class="category-header">
+                    <h2>👋 Welcome System</h2>
+                    <span class="tier-badge tier-free">FREE</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!welcome setup #channel</code></td><td class="desc">Set welcome channel</td></tr>
+                        <tr><td><code>!welcome message [text]</code></td><td class="desc">Set custom welcome message</td></tr>
+                        <tr><td><code>!welcome role @role</code></td><td class="desc">Set auto-role for new members</td></tr>
+                        <tr><td><code>!welcome color [hex]</code></td><td class="desc">Set embed color</td></tr>
+                        <tr><td><code>!welcome toggle</code></td><td class="desc">Enable/disable welcome system</td></tr>
+                        <tr><td><code>!welcome test</code></td><td class="desc">Test welcome message</td></tr>
+                        <tr><td><code>!welcome config</code></td><td class="desc">View current configuration</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Ticket System -->
+            <div class="category-section" data-category="tickets">
+                <div class="category-header">
+                    <h2>🎫 Ticket System</h2>
+                    <span class="tier-badge tier-free">FREE</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!ticket setup</code></td><td class="desc">Initial ticket system setup</td></tr>
+                        <tr><td><code>!ticket panel [#channel]</code></td><td class="desc">Send ticket panel to channel</td></tr>
+                        <tr><td><code>!ticket category [category]</code></td><td class="desc">Set ticket category</td></tr>
+                        <tr><td><code>!ticket log #channel</code></td><td class="desc">Set transcript log channel</td></tr>
+                        <tr><td><code>!ticket role @role</code></td><td class="desc">Set support role</td></tr>
+                        <tr><td><code>!ticket message [text]</code></td><td class="desc">Set ticket welcome message</td></tr>
+                        <tr><td><code>!ticket addcat [id] [emoji] [name]</code></td><td class="desc">Add ticket category</td></tr>
+                        <tr><td><code>!ticket removecat [id]</code></td><td class="desc">Remove ticket category</td></tr>
+                        <tr><td><code>!ticket config</code></td><td class="desc">View ticket configuration</td></tr>
+                        <tr><td><code>!ticket toggle</code></td><td class="desc">Enable/disable ticket system</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Invite Tracker -->
+            <div class="category-section" data-category="invites">
+                <div class="category-header">
+                    <h2>📊 Invite Tracker</h2>
+                    <span class="tier-badge tier-free">FREE</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!invites [@user]</code></td><td class="desc">Check invite count</td></tr>
+                        <tr><td><code>!inviteleaderboard</code></td><td class="desc">View invite leaderboard</td></tr>
+                        <tr><td><code>!invitestats</code></td><td class="desc">Detailed invite statistics</td></tr>
+                        <tr><td><code>!inviteconfig</code></td><td class="desc">Configure invite tracker</td></tr>
+                        <tr><td><code>!bonusinvites @user [amount]</code></td><td class="desc">Add bonus invites</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Reaction Roles -->
+            <div class="category-section" data-category="roles">
+                <div class="category-header">
+                    <h2>🎭 Reaction Roles</h2>
+                    <span class="tier-badge tier-free">FREE</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!quickaddrole [emoji] @role</code></td><td class="desc">Quick add reaction role</td></tr>
+                        <tr><td><code>!removerole [message_id]</code></td><td class="desc">Remove reaction role</td></tr>
+                        <tr><td><code>!listroles</code></td><td class="desc">List all reaction roles</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Mini Games -->
+            <div class="category-section" data-category="games">
+                <div class="category-header">
+                    <h2>🎲 Mini Games</h2>
+                    <span class="tier-badge tier-starter">STARTER+</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!game trivia</code></td><td class="desc">Play trivia game</td></tr>
+                        <tr><td><code>!game hangman</code></td><td class="desc">Play hangman</td></tr>
+                        <tr><td><code>!game math</code></td><td class="desc">Math challenge</td></tr>
+                        <tr><td><code>!game rps</code></td><td class="desc">Rock Paper Scissors</td></tr>
+                        <tr><td><code>!game leaderboard</code></td><td class="desc">View game leaderboard</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Memory & Facts -->
+            <div class="category-section" data-category="memory">
+                <div class="category-header">
+                    <h2>🧠 Memory & Facts</h2>
+                    <span class="tier-badge tier-free">FREE</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!remember [fact]</code></td><td class="desc">Save a fact about yourself</td></tr>
+                        <tr><td><code>!facts</code></td><td class="desc">View your saved facts</td></tr>
+                        <tr><td><code>!forget [fact_id]</code></td><td class="desc">Delete a saved fact</td></tr>
+                        <tr><td><code>!zodiac [sign]</code></td><td class="desc">Get zodiac information</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Template Creator -->
+            <div class="category-section" data-category="templates">
+                <div class="category-header">
+                    <h2>📝 Template Creator</h2>
+                    <span class="tier-badge tier-premium">PREMIUM</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!template create</code></td><td class="desc">Create server template with AI</td></tr>
+                        <tr><td><code>!template list</code></td><td class="desc">List your saved templates</td></tr>
+                        <tr><td><code>!template apply [id]</code></td><td class="desc">Apply template to server</td></tr>
+                        <tr><td><code>!template delete [id]</code></td><td class="desc">Delete a template</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Temp Voice -->
+            <div class="category-section" data-category="voice">
+                <div class="category-header">
+                    <h2>🎙️ Temporary Voice Channels</h2>
+                    <span class="tier-badge tier-premium">PREMIUM</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!tempvoice setup</code></td><td class="desc">Setup temp voice system</td></tr>
+                        <tr><td><code>!tempvoice create</code></td><td class="desc">Create temporary voice channel</td></tr>
+                        <tr><td><code>!tempvoice name [name]</code></td><td class="desc">Rename your channel</td></tr>
+                        <tr><td><code>!tempvoice limit [number]</code></td><td class="desc">Set user limit</td></tr>
+                        <tr><td><code>!tempvoice lock</code></td><td class="desc">Lock your channel</td></tr>
+                        <tr><td><code>!tempvoice unlock</code></td><td class="desc">Unlock your channel</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Utilities -->
+            <div class="category-section" data-category="utilities">
+                <div class="category-header">
+                    <h2>🔧 Utilities</h2>
+                    <span class="tier-badge tier-free">FREE</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!help [command]</code></td><td class="desc">Show help information</td></tr>
+                        <tr><td><code>!commands</code></td><td class="desc">List all commands</td></tr>
+                        <tr><td><code>!search_commands [query]</code></td><td class="desc">Search for commands</td></tr>
+                        <tr><td><code>!info</code></td><td class="desc">Bot information</td></tr>
+                        <tr><td><code>!invite</code></td><td class="desc">Get bot invite link</td></tr>
+                        <tr><td><code>!search [query]</code></td><td class="desc">Search the web</td></tr>
+                        <tr><td><code>!weather [city]</code></td><td class="desc">Get weather information</td></tr>
+                        <tr><td><code>!language</code></td><td class="desc">Change bot language</td></tr>
+                        <tr><td><code>/language</code></td><td class="desc">Change language (slash)</td></tr>
+                        <tr><td><code>!setup</code></td><td class="desc">First-time server setup</td></tr>
+                        <tr><td><code>!changelog</code></td><td class="desc">View recent changes</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Food & Recipes -->
+            <div class="category-section" data-category="food">
+                <div class="category-header">
+                    <h2>🍕 Food & Recipes</h2>
+                    <span class="tier-badge tier-premium">PREMIUM</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!food [preferences]</code></td><td class="desc">Get food suggestions</td></tr>
+                        <tr><td><code>!recipe [dish]</code></td><td class="desc">Get recipe for a dish</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Torrent -->
+            <div class="category-section" data-category="torrent">
+                <div class="category-header">
+                    <h2>🔍 Torrent Search</h2>
+                    <span class="tier-badge tier-premium">PREMIUM</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!torrent [query]</code></td><td class="desc">Search for torrents</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Community Brain -->
+            <div class="category-section" data-category="brain">
+                <div class="category-header">
+                    <h2>🧠 Community Brain</h2>
+                    <span class="tier-badge tier-premium">PREMIUM</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!brain status</code></td><td class="desc">View community brain status</td></tr>
+                        <tr><td><code>!brain insights</code></td><td class="desc">Get community insights</td></tr>
+                        <tr><td><code>!brain mood</code></td><td class="desc">Check community mood</td></tr>
+                        <tr><td><code>!brain predict</code></td><td class="desc">Get predictions</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Subscription -->
+            <div class="category-section" data-category="subscription">
+                <div class="category-header">
+                    <h2>💳 Subscription</h2>
+                    <span class="tier-badge tier-free">FREE</span>
+                </div>
+                <table class="commands-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>!subscription</code></td><td class="desc">View your subscription status</td></tr>
+                        <tr><td><code>!subscription info</code></td><td class="desc">Detailed subscription info</td></tr>
+                        <tr><td><code>!subscription upgrade</code></td><td class="desc">Upgrade your subscription</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 Security Assistant Bot. Made with ❤️ for Discord Communities</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Command search functionality
+        const searchInput = document.getElementById('command-search');
+        const categories = document.querySelectorAll('.category-section');
+        const visibleCount = document.getElementById('visible-count');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            let count = 0;
+
+            categories.forEach(category => {
+                const rows = category.querySelectorAll('tbody tr');
+                let categoryVisible = false;
+
+                rows.forEach(row => {
+                    const command = row.querySelector('code').textContent.toLowerCase();
+                    const desc = row.querySelector('.desc').textContent.toLowerCase();
+                    
+                    if (command.includes(query) || desc.includes(query)) {
+                        row.style.display = '';
+                        categoryVisible = true;
+                        count++;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+
+                category.style.display = categoryVisible ? '' : 'none';
+            });
+
+            visibleCount.textContent = count;
+        });
+
+        // Count initial commands
+        let initialCount = 0;
+        document.querySelectorAll('.commands-table tbody tr').forEach(() => initialCount++);
+        visibleCount.textContent = initialCount;
+    </script>
+</body>
+</html>

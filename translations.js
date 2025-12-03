@@ -107,6 +107,18 @@ const translations = {
                 title: "Reaction Roles",
                 desc: "Easy role management with reaction roles and custom role menus.",
                 items: ["Reaction roles", "Custom menus", "Multiple roles", "Easy setup"]
+            },
+            
+            tickets: {
+                title: "Ticket System",
+                desc: "Professional support ticket system with categories, transcripts, and staff management.",
+                items: ["Multiple categories", "Auto transcripts", "Staff roles", "Custom messages"]
+            },
+            
+            toxicity: {
+                title: "Toxicity Filter",
+                desc: "AI-powered content moderation to detect and filter toxic messages automatically.",
+                items: ["AI detection", "Auto moderation", "Custom thresholds", "Logging"]
             }
         },
         
@@ -127,6 +139,10 @@ const translations = {
             title: "Simple Pricing",
             subtitle: "Choose the plan that fits your community",
             month: "/month",
+            year: "/year",
+            monthly: "Monthly",
+            yearly: "Yearly",
+            saveUp: "Save up to 40%!",
             
             free: {
                 name: "Free",
@@ -134,7 +150,10 @@ const translations = {
                 features: [
                     "✓ Basic Commands",
                     "✓ Reaction Roles (Full)",
-                    "✓ Levels System (8/day)",
+                    "✓ 👋 Welcome System",
+                    "✓ 🎫 Ticket System",
+                    "✓ 📊 Invite Tracker",
+                    "✓ 🛡️ Toxicity Filter",
                     "✓ Help & Info",
                     "✓ Weather (3/day)",
                     "✓ Search (5/day)",
@@ -159,7 +178,10 @@ const translations = {
                     "🖼️ Image Gen: 3/day",
                     "🎬 GIF Gen: 2/day",
                     "🎮 Mini Games: Basic",
-                    "✨ All FREE features: UNLIMITED"
+                    "✨ All FREE features: UNLIMITED",
+                    "✗ Moderation Tools",
+                    "✗ Anti-Raid",
+                    "✗ Levels System"
                 ]
             },
             
@@ -178,7 +200,7 @@ const translations = {
                     "🔍 Torrent: 20/day",
                     "🛡️ Anti-Raid",
                     "👮 Moderation",
-                    "👋 Welcome System",
+                    "🎮 Levels System",
                     "🧠 Community Brain",
                     "📝 Templates: 5/day",
                     "🍕 Food: 10/day",
@@ -215,6 +237,7 @@ const translations = {
                 btnText: "Contact Sales",
                 features: [
                     "✨ All VIP Features",
+                    "🤖 AI Agent: 50/month",
                     "🤖 AI: UNLIMITED for all",
                     "👥 Multi-Admin Support",
                     "📊 Advanced Analytics",
@@ -358,6 +381,18 @@ const translations = {
                 title: "Reaction Roles",
                 desc: "Εύκολη διαχείριση ρόλων με reaction roles και προσαρμοσμένα μενού ρόλων.",
                 items: ["Reaction roles", "Προσαρμοσμένα μενού", "Πολλαπλοί ρόλοι", "Εύκολη ρύθμιση"]
+            },
+            
+            tickets: {
+                title: "Σύστημα Tickets",
+                desc: "Επαγγελματικό σύστημα υποστήριξης με κατηγορίες, transcripts και διαχείριση προσωπικού.",
+                items: ["Πολλαπλές κατηγορίες", "Αυτόματα transcripts", "Ρόλοι προσωπικού", "Προσαρμοσμένα μηνύματα"]
+            },
+            
+            toxicity: {
+                title: "Φίλτρο Τοξικότητας",
+                desc: "AI-powered διαχείριση περιεχομένου για ανίχνευση και φιλτράρισμα τοξικών μηνυμάτων αυτόματα.",
+                items: ["AI ανίχνευση", "Αυτόματη διαχείριση", "Προσαρμοσμένα όρια", "Καταγραφή"]
             }
         },
         
@@ -378,6 +413,10 @@ const translations = {
             title: "Απλές Τιμές",
             subtitle: "Επιλέξτε το πλάνο που ταιριάζει στην κοινότητά σας",
             month: "/μήνα",
+            year: "/έτος",
+            monthly: "Μηνιαία",
+            yearly: "Ετήσια",
+            saveUp: "Εξοικονομήστε έως 40%!",
             
             free: {
                 name: "Δωρεάν",
@@ -385,7 +424,10 @@ const translations = {
                 features: [
                     "✓ Βασικές Εντολές",
                     "✓ Reaction Roles (Πλήρες)",
-                    "✓ Σύστημα Επιπέδων (8/ημέρα)",
+                    "✓ 👋 Σύστημα Καλωσορίσματος",
+                    "✓ 🎫 Σύστημα Tickets",
+                    "✓ 📊 Invite Tracker",
+                    "✓ 🛡️ Φίλτρο Τοξικότητας",
                     "✓ Βοήθεια & Πληροφορίες",
                     "✓ Καιρός (3/ημέρα)",
                     "✓ Αναζήτηση (5/ημέρα)",
@@ -410,7 +452,10 @@ const translations = {
                     "🖼️ Image Gen: 3/ημέρα",
                     "🎬 GIF Gen: 2/ημέρα",
                     "🎮 Mini Games: Basic",
-                    "✨ Όλα τα FREE: ΑΠΕΡΙΟΡΙΣΤΑ"
+                    "✨ Όλα τα FREE: ΑΠΕΡΙΟΡΙΣΤΑ",
+                    "✗ Moderation Tools",
+                    "✗ Anti-Raid",
+                    "✗ Σύστημα Επιπέδων"
                 ]
             },
             
@@ -429,7 +474,7 @@ const translations = {
                     "🔍 Torrent: 20/ημέρα",
                     "🛡️ Anti-Raid",
                     "👮 Moderation",
-                    "👋 Welcome System",
+                    "🎮 Σύστημα Επιπέδων",
                     "🧠 Community Brain",
                     "📝 Templates: 5/ημέρα",
                     "🍕 Food: 10/ημέρα",
@@ -466,6 +511,7 @@ const translations = {
                 btnText: "Επικοινωνία Πωλήσεων",
                 features: [
                     "✨ Όλα τα VIP",
+                    "🤖 AI Agent: 50/μήνα",
                     "🤖 AI: ΑΠΕΡΙΟΡΙΣΤΟ για όλους",
                     "👥 Multi-Admin Support",
                     "📊 Advanced Analytics",

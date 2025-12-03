@@ -22,7 +22,7 @@
             </div>
             <div class="nav-links">
                 <a href="#features" data-i18n="nav.features">Features</a>
-                <a href="#commands" data-i18n="nav.commands">Commands</a>
+                <a href="commands.html" data-i18n="nav.commands">Commands</a>
                 <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
                 <a href="#support" data-i18n="nav.support">Support</a>
                 <div class="language-switcher">
@@ -234,6 +234,30 @@
                         <li>✓ <span data-i18n="features.roles.items.3">Easy setup</span></li>
                     </ul>
                 </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎫</div>
+                    <h3 data-i18n="features.tickets.title">Ticket System</h3>
+                    <p data-i18n="features.tickets.desc">Professional support ticket system with categories, transcripts, and staff management.</p>
+                    <ul class="feature-list">
+                        <li>✓ <span data-i18n="features.tickets.items.0">Multiple categories</span></li>
+                        <li>✓ <span data-i18n="features.tickets.items.1">Auto transcripts</span></li>
+                        <li>✓ <span data-i18n="features.tickets.items.2">Staff roles</span></li>
+                        <li>✓ <span data-i18n="features.tickets.items.3">Custom messages</span></li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 data-i18n="features.toxicity.title">Toxicity Filter</h3>
+                    <p data-i18n="features.toxicity.desc">AI-powered content moderation to detect and filter toxic messages automatically.</p>
+                    <ul class="feature-list">
+                        <li>✓ <span data-i18n="features.toxicity.items.0">AI detection</span></li>
+                        <li>✓ <span data-i18n="features.toxicity.items.1">Auto moderation</span></li>
+                        <li>✓ <span data-i18n="features.toxicity.items.2">Custom thresholds</span></li>
+                        <li>✓ <span data-i18n="features.toxicity.items.3">Logging</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -313,7 +337,10 @@
             </div>
 
             <div class="commands-footer">
-                <p>And 40+ more commands! Use <code>!commands</code> to see all commands.</p>
+                <p>And 70+ more commands!</p>
+                <a href="commands.html" class="btn btn-primary" style="margin-top: 20px;">
+                    📚 View All Commands
+                </a>
             </div>
         </div>
     </section>
@@ -326,7 +353,18 @@
                 <p data-i18n="pricing.subtitle">Choose the plan that fits your community</p>
             </div>
 
-            <div class="pricing-grid">
+            <!-- Billing Toggle -->
+            <div class="billing-toggle">
+                <span class="toggle-label" data-i18n="pricing.monthly">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" data-i18n="pricing.yearly">Yearly</span>
+                <span class="save-badge" data-i18n="pricing.saveUp">Save up to 40%!</span>
+            </div>
+
+            <div class="pricing-grid" id="monthly-pricing">
                 <div class="pricing-card">
                     <h3 data-i18n="pricing.free.name">Free</h3>
                     <div class="price">
@@ -336,7 +374,10 @@
                     <ul class="pricing-features">
                         <li>✓ Basic Commands</li>
                         <li>✓ Reaction Roles (Full)</li>
-                        <li>✓ Levels System (8/day)</li>
+                        <li>✓ 👋 Welcome System</li>
+                        <li>✓ 🎫 Ticket System</li>
+                        <li>✓ 📊 Invite Tracker</li>
+                        <li>✓ 🛡️ Toxicity Filter</li>
                         <li>✓ Help & Info</li>
                         <li>✓ Weather (3/day)</li>
                         <li>✓ Search (5/day)</li>
@@ -368,7 +409,7 @@
                         <li>✓ ✨ All FREE features: UNLIMITED</li>
                         <li>✗ Moderation Tools</li>
                         <li>✗ Anti-Raid</li>
-                        <li>✗ Welcome System</li>
+                        <li>✗ Levels System</li>
                     </ul>
                 </div>
 
@@ -390,7 +431,7 @@
                         <li>✓ 🔍 Torrent: 20/day</li>
                         <li>✓ 🛡️ Anti-Raid</li>
                         <li>✓ 👮 Moderation</li>
-                        <li>✓ 👋 Welcome System</li>
+                        <li>✓ 🎮 Levels System</li>
                         <li>✓ 🧠 Community Brain</li>
                         <li>✓ 📝 Templates: 5/day</li>
                         <li>✓ 🍕 Food: 10/day</li>
@@ -433,6 +474,138 @@
                     </div>
                     <ul class="pricing-features">
                         <li>✓ ✨ All VIP Features</li>
+                        <li>✓ 🤖 <strong>AI Agent</strong>: 50/month</li>
+                        <li>✓ 🤖 AI: UNLIMITED for all</li>
+                        <li>✓ 👥 Multi-Admin Support</li>
+                        <li>✓ 📊 Advanced Analytics</li>
+                        <li>✓ 🔒 Enhanced Security</li>
+                        <li>✓ 📞 24/7 Priority Support</li>
+                        <li>✓ 🎯 Account Manager</li>
+                        <li>✓ 📈 Business Reports</li>
+                        <li>✓ ⏱️ SLA Guarantee (99.9%)</li>
+                        <li>✓ 🚀 Priority Queue</li>
+                        <li style="font-size: 0.85em; color: #888;">* Custom Integrations & Development</li>
+                        <li style="font-size: 0.85em; color: #888;">  Contact support for custom solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Yearly Pricing (hidden by default) -->
+            <div class="pricing-grid hidden" id="yearly-pricing">
+                <div class="pricing-card">
+                    <h3 data-i18n="pricing.free.name">Free</h3>
+                    <div class="price">
+                        <span class="amount">€0</span>
+                        <span class="period" data-i18n="pricing.year">/year</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Basic Commands</li>
+                        <li>✓ Reaction Roles (Full)</li>
+                        <li>✓ 👋 Welcome System</li>
+                        <li>✓ 🎫 Ticket System</li>
+                        <li>✓ 📊 Invite Tracker</li>
+                        <li>✓ 🛡️ Toxicity Filter</li>
+                        <li>✓ Help & Info</li>
+                        <li>✓ Weather (3/day)</li>
+                        <li>✓ Search (5/day)</li>
+                        <li>✓ Basic Memory (15/day)</li>
+                        <li>✗ Music System</li>
+                        <li>✗ AI Assistant</li>
+                        <li>✗ Moderation</li>
+                        <li>✗ Anti-Raid</li>
+                        <li>✗ Mini Games</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1429614048021971044&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn btn-outline" data-i18n="pricing.free.btnText">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-badge discount-badge">💰 25% OFF</div>
+                    <h3 data-i18n="pricing.starter.name">Starter</h3>
+                    <div class="price">
+                        <span class="amount">€44.99</span>
+                        <span class="period" data-i18n="pricing.year">/year</span>
+                    </div>
+                    <div class="price-note">€3.75/month - Save €14.89!</div>
+                    <ul class="pricing-features">
+                        <li>✓ 🎵 Music: 10 songs/day</li>
+                        <li>✓ 🤖 AI Assistant: 10/day</li>
+                        <li>✓ 🤖 AI Server: 5/day</li>
+                        <li>✓ 📖 Story System: 5/day</li>
+                        <li>✓ 🧠 Memory: 10/day</li>
+                        <li>✓ 🖼️ Image Gen: 3/day</li>
+                        <li>✓ 🎬 GIF Gen: 2/day</li>
+                        <li>✓ 🎮 Mini Games: Basic</li>
+                        <li>✓ ✨ All FREE features: UNLIMITED</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">⭐ Best Value - 30% OFF</div>
+                    <h3 data-i18n="pricing.premium.name">Premium</h3>
+                    <div class="price">
+                        <span class="amount">€74.99</span>
+                        <span class="period" data-i18n="pricing.year">/year</span>
+                    </div>
+                    <div class="price-note">€6.25/month - Save €32.89!</div>
+                    <ul class="pricing-features">
+                        <li>✓ 🎵 Music: UNLIMITED</li>
+                        <li>✓ 🤖 AI Assistant: 30/day</li>
+                        <li>✓ 🤖 AI Server: 10/day</li>
+                        <li>✓ 📖 Story: UNLIMITED</li>
+                        <li>✓ 🧠 Memory: UNLIMITED</li>
+                        <li>✓ 🖼️ Image Gen: 10/day</li>
+                        <li>✓ 🎬 GIF Gen: 5/day</li>
+                        <li>✓ 🔍 Torrent: 20/day</li>
+                        <li>✓ 🛡️ Anti-Raid</li>
+                        <li>✓ 👮 Moderation</li>
+                        <li>✓ 🎮 Levels System</li>
+                        <li>✓ 🧠 Community Brain</li>
+                        <li>✓ 📝 Templates: 5/day</li>
+                        <li>✓ 🍕 Food: 10/day</li>
+                        <li>✓ 🔊 TTS: 20/day</li>
+                        <li>✓ 🎙️ Temp Voice: 3 ch</li>
+                        <li>✓ 🎮 Mini Games: All</li>
+                        <li>✓ 🛠️ Admin Commands</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-badge discount-badge">💰 35% OFF</div>
+                    <h3 data-i18n="pricing.vip.name">VIP</h3>
+                    <div class="price">
+                        <span class="amount">€132.99</span>
+                        <span class="period" data-i18n="pricing.year">/year</span>
+                    </div>
+                    <div class="price-note">€11.08/month - Save €70.89!</div>
+                    <ul class="pricing-features">
+                        <li>✓ ✨ All Premium Features</li>
+                        <li>✓ 🤖 AI: UNLIMITED</li>
+                        <li>✓ 🖼️ Image Gen: UNLIMITED</li>
+                        <li>✓ 🎬 GIF Gen: UNLIMITED</li>
+                        <li>✓ 🔍 Torrent: UNLIMITED</li>
+                        <li>✓ 🍕 Food: UNLIMITED</li>
+                        <li>✓ 📝 Templates: UNLIMITED</li>
+                        <li>✓ 🔊 TTS: UNLIMITED</li>
+                        <li>✓ 🎙️ Temp Voice: UNLIMITED</li>
+                        <li>✓ ⚡ Priority Support</li>
+                        <li>✓ 🎨 Custom Branding</li>
+                        <li>✓ 🔧 Custom Commands</li>
+                        <li>✓ 📊 Advanced Analytics</li>
+                        <li>✓ 🚀 Early Access</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-badge discount-badge">💰 40% OFF</div>
+                    <h3 data-i18n="pricing.business.name">Business</h3>
+                    <div class="price">
+                        <span class="amount">€287.99</span>
+                        <span class="period" data-i18n="pricing.year">/year</span>
+                    </div>
+                    <div class="price-note">€24.00/month - Save €191.89!</div>
+                    <ul class="pricing-features">
+                        <li>✓ ✨ All VIP Features</li>
+                        <li>✓ 🤖 <strong>AI Agent</strong>: 50/month</li>
                         <li>✓ 🤖 AI: UNLIMITED for all</li>
                         <li>✓ 👥 Multi-Admin Support</li>
                         <li>✓ 📊 Advanced Analytics</li>

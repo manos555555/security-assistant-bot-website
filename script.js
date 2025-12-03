@@ -198,3 +198,37 @@ window.addEventListener('load', () => {
 });
 
 console.log('🛡️ Security Assistant Bot - Website loaded successfully!');
+
+// Billing Toggle (Monthly/Yearly)
+const billingToggle = document.getElementById('billing-toggle');
+const monthlyPricing = document.getElementById('monthly-pricing');
+const yearlyPricing = document.getElementById('yearly-pricing');
+const toggleLabels = document.querySelectorAll('.toggle-label');
+
+if (billingToggle) {
+    // Set initial state
+    toggleLabels[0].classList.add('active');
+    
+    billingToggle.addEventListener('change', function() {
+        if (this.checked) {
+            // Yearly
+            monthlyPricing.classList.add('hidden');
+            yearlyPricing.classList.remove('hidden');
+            toggleLabels[0].classList.remove('active');
+            toggleLabels[1].classList.add('active');
+        } else {
+            // Monthly
+            monthlyPricing.classList.remove('hidden');
+            yearlyPricing.classList.add('hidden');
+            toggleLabels[0].classList.add('active');
+            toggleLabels[1].classList.remove('active');
+        }
+        
+        // Re-observe pricing cards for animation
+        document.querySelectorAll('.pricing-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            observer.observe(el);
+        });
+    });
+}
