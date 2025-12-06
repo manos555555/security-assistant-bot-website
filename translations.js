@@ -87,8 +87,8 @@ const translations = {
             
             language: {
                 title: "Multi-Language",
-                desc: "Full support for English and Greek with easy language switching per server.",
-                items: ["English & Greek", "Per-server settings", "Easy switching", "Full translation"]
+                desc: "Full support for 8 languages with easy language switching per server.",
+                items: ["8 Languages", "Per-server settings", "Easy switching", "Full translation"]
             },
             
             analytics: {
@@ -437,8 +437,8 @@ const translations = {
             
             language: {
                 title: "Πολυγλωσσικό",
-                desc: "Πλήρης υποστήριξη για Αγγλικά και Ελληνικά με εύκολη αλλαγή γλώσσας ανά server.",
-                items: ["Αγγλικά & Ελληνικά", "Ρυθμίσεις ανά server", "Εύκολη αλλαγή", "Πλήρης μετάφραση"]
+                desc: "Πλήρης υποστήριξη για 8 γλώσσες με εύκολη αλλαγή γλώσσας ανά server.",
+                items: ["8 Γλώσσες", "Ρυθμίσεις ανά server", "Εύκολη αλλαγή", "Πλήρης μετάφραση"]
             },
             
             analytics: {
@@ -698,5 +698,1248 @@ const translations = {
             terms: "Όροι Χρήσης",
             copyright: "© 2025 Security Assistant Bot. Φτιαγμένο με ❤️ για Discord Κοινότητες"
         }
+    },
+    de: {
+            "nav": {
+                    "features": "Merkmale",
+                    "commands": "Befehle",
+                    "pricing": "Preise",
+                    "support": "Unterstützung"
+            },
+            "hero": {
+                    "badge": "✨ Jetzt mit KI-Integration",
+                    "title": "Der ultimative Discord-Bot",
+                    "titleGradient": "für Ihre Community",
+                    "description": "Leistungsstarke Sicherheit, intelligente Moderation, ansprechendes Levelsystem, KI-Assistent, Musikplayer und über 50 Funktionen, um Ihren Discord-Server zu optimieren.",
+                    "highlight1": "🔥 KI-gestütztes Story-System",
+                    "highlight2": "🚀 Automatisierter Vorlagenersteller",
+                    "highlight3": "🎨 Bild- und GIF-Generierung",
+                    "btnAdd": "➕ Zu Discord hinzufügen",
+                    "btnLearn": "📖 Erfahren Sie mehr",
+                    "stat1Number": "50+",
+                    "stat1Label": "Befehle",
+                    "stat2Number": "24/7",
+                    "stat2Label": "Betriebszeit",
+                    "stat3Number": "100 %",
+                    "stat3Label": "Frei"
+            },
+            "features": {
+                    "title": "Leistungsstarke Funktionen",
+                    "subtitle": "Alles, was Sie zum Verwalten und Erweitern Ihrer Discord-Community benötigen",
+                    "security": {
+                            "title": "Erweiterte Sicherheit",
+                            "desc": "Anti-Raid-Schutz, automatische Moderation, Verifizierungssystem und Bedrohungserkennung in Echtzeit, um die Sicherheit Ihres Servers zu gewährleisten.",
+                            "items": [
+                                    "Anti-Raid-System",
+                                    "Automoderation",
+                                    "Überprüfung der Mitglieder",
+                                    "Einladungsverfolgung"
+                            ]
+                    },
+                    "leveling": {
+                            "title": "Nivelliersystem",
+                            "desc": "Binden Sie Ihre Community mit XP, Levels, Erfolgen, Bestenlisten und anpassbaren Belohnungen ein.",
+                            "items": [
+                                    "XP- und Level-System",
+                                    "Über 50 Erfolge",
+                                    "Individuelle Belohnungen",
+                                    "Bestenlisten"
+                            ]
+                    },
+                    "ai": {
+                            "badge": "⭐ Beliebt",
+                            "title": "KI-Assistent",
+                            "desc": "Unterstützt durch Google Gemini AI für intelligente Gespräche, Bildgenerierung und intelligente Unterstützung.",
+                            "items": [
+                                    "Natürliche Gespräche",
+                                    "Bilderzeugung",
+                                    "Kontextbewusstsein",
+                                    "Mehrsprachig"
+                            ]
+                    },
+                    "story": {
+                            "badge": "🔥 Einzigartig",
+                            "title": "Interaktives Story-System",
+                            "desc": "Erstellen Sie fesselnde Rollenspielgeschichten mit KI-gestützten Erzählungen, mehreren Rollen und dynamischen Auswahlmöglichkeiten!",
+                            "items": [
+                                    "KI-generierte Geschichten",
+                                    "Mehrere Charakterrollen",
+                                    "Dynamischer Story-Fortschritt",
+                                    "Rundenbasiertes Gameplay",
+                                    "Story-Vorlagen"
+                            ]
+                    },
+                    "template": {
+                            "badge": "🚀 Revolutionär",
+                            "title": "AI-Vorlagen-Ersteller",
+                            "desc": "Generieren Sie komplette Discord-Server-Vorlagen mit KI! Kanäle, Rollen, Berechtigungen – alles automatisiert!",
+                            "items": [
+                                    "KI-gestützte Generation",
+                                    "Benutzerdefinierte Kategorien",
+                                    "Automatische Rolleneinrichtung",
+                                    "Berechtigungsvorlagen",
+                                    "Bereitstellung mit einem Klick"
+                            ]
+                    },
+                    "agent": {
+                            "badge": "🆕 NEU",
+                            "title": "KI-Agent",
+                            "desc": "Führen Sie jede Discord-Aufgabe mit natürlicher Sprache aus! Sagen Sie der KI einfach, was Sie wollen, und sie erledigt es automatisch.",
+                            "items": [
+                                    "Befehle in natürlicher Sprache",
+                                    "Erstellen Sie Kanäle und Rollen",
+                                    "Benutzermoderation",
+                                    "Komplexe Automatisierungen",
+                                    "Gefängnis- und Verifizierungssysteme"
+                            ]
+                    },
+                    "music": {
+                            "title": "Musik-Player",
+                            "desc": "Hochwertiges Musik-Streaming mit Playlist-Unterstützung, Audioeffekten und Warteschlangenverwaltung.",
+                            "items": [
+                                    "YouTube und Spotify",
+                                    "Wiedergabelisten",
+                                    "Audioeffekte",
+                                    "Warteschlangensystem"
+                            ]
+                    },
+                    "welcome": {
+                            "title": "Willkommenssystem",
+                            "desc": "Anpassbare Willkommensnachrichten, automatische Rollen und Mitgliederverfolgung zur Begrüßung neuer Mitglieder.",
+                            "items": [
+                                    "Benutzerdefinierte Nachrichten",
+                                    "Automatische Rollen",
+                                    "Willkommensbilder",
+                                    "DM willkommen"
+                            ]
+                    },
+                    "language": {
+                            "title": "Mehrsprachig",
+                            "desc": "Volle Unterstützung für 8 Sprachen mit einfacher Sprachumschaltung pro Server.",
+                            "items": [
+                                    "8 Sprachen",
+                                    "Einstellungen pro Server",
+                                    "Einfacher Wechsel",
+                                    "Vollständige Übersetzung"
+                            ]
+                    },
+                    "analytics": {
+                            "title": "Analytik",
+                            "desc": "Community-Einblicke, Aktivitätsverfolgung und detaillierte Statistiken, um Ihren Server zu verstehen.",
+                            "items": [
+                                    "Aktivitätsverfolgung",
+                                    "Einblicke der Mitglieder",
+                                    "Befehlsstatistiken",
+                                    "Wachstumskennzahlen"
+                            ]
+                    },
+                    "games": {
+                            "title": "Minispiele",
+                            "desc": "Unterhaltsame Spiele wie Quizspiele, Henker, Mathe-Herausforderungen und mehr zur Unterhaltung Ihrer Community.",
+                            "items": [
+                                    "Quizspiele",
+                                    "Henker",
+                                    "Mathe-Herausforderungen",
+                                    "Bestenlisten"
+                            ]
+                    },
+                    "roles": {
+                            "title": "Reaktionsrollen",
+                            "desc": "Einfache Rollenverwaltung mit Reaktionsrollen und benutzerdefinierten Rollenmenüs.",
+                            "items": [
+                                    "Reaktionsrollen",
+                                    "Benutzerdefinierte Menüs",
+                                    "Mehrere Rollen",
+                                    "Einfache Einrichtung"
+                            ]
+                    },
+                    "tickets": {
+                            "title": "Ticketsystem",
+                            "desc": "Professionelles Support-Ticketsystem mit Kategorien, Transkripten und Personalverwaltung.",
+                            "items": [
+                                    "Mehrere Kategorien",
+                                    "Automatische Transkripte",
+                                    "Mitarbeiterrollen",
+                                    "Benutzerdefinierte Nachrichten"
+                            ]
+                    },
+                    "toxicity": {
+                            "title": "Toxizitätsfilter",
+                            "desc": "KI-gestützte Inhaltsmoderation zur automatischen Erkennung und Filterung schädlicher Nachrichten.",
+                            "items": [
+                                    "KI-Erkennung",
+                                    "Automatische Moderation",
+                                    "Benutzerdefinierte Schwellenwerte",
+                                    "Protokollierung"
+                            ]
+                    }
+            },
+            "commands": {
+                    "title": "Beliebte Befehle",
+                    "subtitle": "Über 150 Befehle in über 20 Kategorien",
+                    "footer": "Und viele mehr! Verwenden Sie !commands in Discord, um alle verfügbaren Befehle anzuzeigen.",
+                    "viewAll": "📚 Vollständige Befehlsliste anzeigen"
+            },
+            "pricing": {
+                    "title": "Einfache Preisgestaltung",
+                    "subtitle": "Wählen Sie den Plan, der zu Ihrer Gemeinde passt",
+                    "month": "/Monat",
+                    "year": "/Jahr",
+                    "monthly": "Monatlich",
+                    "yearly": "Jährlich",
+                    "saveUp": "Sparen Sie bis zu 40 %!"
+            },
+            "support": {
+                    "title": "Brauchen Sie Hilfe?",
+                    "subtitle": "Treten Sie unserem Support-Server bei, um Hilfe, Updates und Community zu erhalten",
+                    "btnServer": "💬 Treten Sie dem Support-Server bei",
+                    "btnEmail": "📧 E-Mail-Support"
+            },
+            "footer": {
+                    "tagline": "Der ultimative Discord-Bot für Ihre Community",
+                    "quickLinks": "Quicklinks",
+                    "legal": "Legal",
+                    "connect": "Verbinden",
+                    "voteForUs": "⭐ Stimmen Sie für uns",
+                    "privacy": "Datenschutzrichtlinie",
+                    "terms": "Nutzungsbedingungen",
+                    "copyright": "© 2025 Security Assistant Bot. Hergestellt mit ❤️ für Discord-Communitys"
+            }
+    },
+    fr: {
+            "nav": {
+                    "features": "Caractéristiques",
+                    "commands": "Commandes",
+                    "pricing": "Tarifs",
+                    "support": "Soutien"
+            },
+            "hero": {
+                    "badge": "✨ Maintenant avec l'intégration de l'IA",
+                    "title": "Le robot Discord ultime",
+                    "titleGradient": "pour votre communauté",
+                    "description": "Sécurité puissante, modération intelligente, système de mise à niveau attrayant, assistant IA, lecteur de musique et plus de 50 fonctionnalités pour dynamiser votre serveur Discord.",
+                    "highlight1": "🔥 Système d'histoire alimenté par l'IA",
+                    "highlight2": "🚀 Créateur de modèles automatisé",
+                    "highlight3": "🎨 Génération d'images et de GIF",
+                    "btnAdd": "➕ Ajouter à Discord",
+                    "btnLearn": "📖 En savoir plus",
+                    "stat1Number": "50+",
+                    "stat1Label": "Commandes",
+                    "stat2Number": "24h/24 et 7j/7",
+                    "stat2Label": "Temps de disponibilité",
+                    "stat3Number": "100%",
+                    "stat3Label": "Gratuit"
+            },
+            "features": {
+                    "title": "Fonctionnalités puissantes",
+                    "subtitle": "Tout ce dont vous avez besoin pour gérer et développer votre communauté Discord",
+                    "security": {
+                            "title": "Sécurité avancée",
+                            "desc": "Protection anti-raid, modération automatique, système de vérification et détection des menaces en temps réel pour assurer la sécurité de votre serveur.",
+                            "items": [
+                                    "Système anti-raid",
+                                    "Modération automatique",
+                                    "Vérification des membres",
+                                    "Suivi des invitations"
+                            ]
+                    },
+                    "leveling": {
+                            "title": "Système de mise à niveau",
+                            "desc": "Engagez votre communauté avec XP, niveaux, réalisations, classements et récompenses personnalisables.",
+                            "items": [
+                                    "Système XP et niveau",
+                                    "50+ réalisations",
+                                    "Récompenses personnalisées",
+                                    "Classements"
+                            ]
+                    },
+                    "ai": {
+                            "badge": "⭐ Populaire",
+                            "title": "Assistant IA",
+                            "desc": "Propulsé par Google Gemini AI pour des conversations intelligentes, la génération d'images et une assistance intelligente.",
+                            "items": [
+                                    "Conversations naturelles",
+                                    "Génération d'images",
+                                    "Conscience du contexte",
+                                    "Multilingue"
+                            ]
+                    },
+                    "story": {
+                            "badge": "🔥 Unique",
+                            "title": "Système d'histoire interactif",
+                            "desc": "Créez des histoires de jeu de rôle immersives avec des récits basés sur l'IA, des rôles multiples et des choix dynamiques !",
+                            "items": [
+                                    "Histoires générées par l'IA",
+                                    "Plusieurs rôles de personnages",
+                                    "Progression dynamique de l'histoire",
+                                    "Un gameplay au tour par tour",
+                                    "Modèles d'histoire"
+                            ]
+                    },
+                    "template": {
+                            "badge": "🚀 Révolutionnaire",
+                            "title": "Créateur de modèles d'IA",
+                            "desc": "Générez des modèles de serveur Discord complets avec l'IA ! Canaux, rôles, autorisations : tout est automatisé !",
+                            "items": [
+                                    "Génération basée sur l'IA",
+                                    "Catégories personnalisées",
+                                    "Configuration automatique des rôles",
+                                    "Modèles d'autorisation",
+                                    "Déploiement en un clic"
+                            ]
+                    },
+                    "agent": {
+                            "badge": "🆕 NOUVEAU",
+                            "title": "Agent IA",
+                            "desc": "Exécutez n’importe quelle tâche Discord avec le langage naturel ! Dites simplement à l’IA ce que vous voulez et elle le fera automatiquement.",
+                            "items": [
+                                    "Commandes en langage naturel",
+                                    "Créer des canaux et des rôles",
+                                    "Modération des utilisateurs",
+                                    "Automatisations complexes",
+                                    "Systèmes de prison et de vérification"
+                            ]
+                    },
+                    "music": {
+                            "title": "Lecteur de musique",
+                            "desc": "Diffusion de musique de haute qualité avec prise en charge des listes de lecture, effets audio et gestion des files d'attente.",
+                            "items": [
+                                    "YouTube et Spotify",
+                                    "Listes de lecture",
+                                    "Effets audio",
+                                    "Système de file d'attente"
+                            ]
+                    },
+                    "welcome": {
+                            "title": "Système de bienvenue",
+                            "desc": "Messages de bienvenue personnalisables, rôles automatiques et suivi des membres pour accueillir les nouveaux membres.",
+                            "items": [
+                                    "Messages personnalisés",
+                                    "Rôles automatiques",
+                                    "Images de bienvenue",
+                                    "DM bienvenue"
+                            ]
+                    },
+                    "language": {
+                            "title": "Multilingue",
+                            "desc": "Prise en charge complète de 8 langues avec changement de langue facile par serveur.",
+                            "items": [
+                                    "8 langues",
+                                    "Paramètres par serveur",
+                                    "Commutation facile",
+                                    "Traduction complète"
+                            ]
+                    },
+                    "analytics": {
+                            "title": "Analytique",
+                            "desc": "Informations sur la communauté, suivi des activités et statistiques détaillées pour comprendre votre serveur.",
+                            "items": [
+                                    "Suivi d'activité",
+                                    "Points de vue des membres",
+                                    "Statistiques de commande",
+                                    "Indicateurs de croissance"
+                            ]
+                    },
+                    "games": {
+                            "title": "Mini-jeux",
+                            "desc": "Des jeux amusants comprenant des quiz, du pendu, des défis mathématiques et bien plus encore pour divertir votre communauté.",
+                            "items": [
+                                    "Jeux-questionnaires",
+                                    "Bourreau",
+                                    "Défis mathématiques",
+                                    "Classements"
+                            ]
+                    },
+                    "roles": {
+                            "title": "Rôles de réaction",
+                            "desc": "Gestion facile des rôles avec des rôles de réaction et des menus de rôles personnalisés.",
+                            "items": [
+                                    "Rôles de réaction",
+                                    "Menus personnalisés",
+                                    "Plusieurs rôles",
+                                    "Installation facile"
+                            ]
+                    },
+                    "tickets": {
+                            "title": "Système de tickets",
+                            "desc": "Système de tickets d'assistance professionnel avec catégories, relevés de notes et gestion du personnel.",
+                            "items": [
+                                    "Plusieurs catégories",
+                                    "Transcriptions automatiques",
+                                    "Rôles du personnel",
+                                    "Messages personnalisés"
+                            ]
+                    },
+                    "toxicity": {
+                            "title": "Filtre de toxicité",
+                            "desc": "Modération de contenu basée sur l'IA pour détecter et filtrer automatiquement les messages toxiques.",
+                            "items": [
+                                    "Détection de l'IA",
+                                    "Modération automatique",
+                                    "Seuils personnalisés",
+                                    "Enregistrement"
+                            ]
+                    }
+            },
+            "commands": {
+                    "title": "Commandes populaires",
+                    "subtitle": "Plus de 150+ commandes dans plus de 20 catégories",
+                    "footer": "Et bien d'autres encore ! Utilisez !commands dans Discord pour voir toutes les commandes disponibles.",
+                    "viewAll": "📚 Afficher la liste complète des commandes"
+            },
+            "pricing": {
+                    "title": "Tarification simple",
+                    "subtitle": "Choisissez le plan qui convient à votre communauté",
+                    "month": "/mois",
+                    "year": "/année",
+                    "monthly": "Mensuel",
+                    "yearly": "Annuel",
+                    "saveUp": "Économisez jusqu'à 40%!"
+            },
+            "support": {
+                    "title": "Besoin d'aide ?",
+                    "subtitle": "Rejoignez notre serveur d'assistance pour obtenir de l'aide, des mises à jour et la communauté",
+                    "btnServer": "💬 Rejoignez le serveur d'assistance",
+                    "btnEmail": "📧 Assistance par e-mail"
+            },
+            "footer": {
+                    "tagline": "Le bot Discord ultime pour votre communauté",
+                    "quickLinks": "Liens rapides",
+                    "legal": "Légal",
+                    "connect": "Connecter",
+                    "voteForUs": "⭐ Votez pour nous",
+                    "privacy": "politique de confidentialité",
+                    "terms": "Conditions d'utilisation",
+                    "copyright": "© 2025 Bot assistant de sécurité. Fabriqué avec ❤️ pour les communautés Discord"
+            }
+    },
+    es: {
+            "nav": {
+                    "features": "Características",
+                    "commands": "Comandos",
+                    "pricing": "Precios",
+                    "support": "Apoyo"
+            },
+            "hero": {
+                    "badge": "✨ Ahora con integración de IA",
+                    "title": "El robot de Discord definitivo",
+                    "titleGradient": "para tu comunidad",
+                    "description": "Potente seguridad, moderación inteligente, atractivo sistema de nivelación, asistente de inteligencia artificial, reproductor de música y más de 50 funciones para potenciar tu servidor Discord.",
+                    "highlight1": "🔥 Sistema de historias impulsado por IA",
+                    "highlight2": "🚀 Creador de plantillas automatizado",
+                    "highlight3": "🎨 Generación de imágenes y GIF",
+                    "btnAdd": "➕ Añadir a Discord",
+                    "btnLearn": "📖 Más información",
+                    "stat1Number": "50+",
+                    "stat1Label": "Comandos",
+                    "stat2Number": "24/7",
+                    "stat2Label": "tiempo de actividad",
+                    "stat3Number": "100%",
+                    "stat3Label": "Gratis"
+            },
+            "features": {
+                    "title": "Funciones potentes",
+                    "subtitle": "Todo lo que necesitas para administrar y hacer crecer tu comunidad Discord",
+                    "security": {
+                            "title": "Seguridad avanzada",
+                            "desc": "Protección anti-incursión, moderación automática, sistema de verificación y detección de amenazas en tiempo real para mantener su servidor seguro.",
+                            "items": [
+                                    "Sistema anti-incursión",
+                                    "Moderación automática",
+                                    "Verificación de miembro",
+                                    "Seguimiento de invitaciones"
+                            ]
+                    },
+                    "leveling": {
+                            "title": "Sistema de nivelación",
+                            "desc": "Involucra a tu comunidad con XP, niveles, logros, tablas de clasificación y recompensas personalizables.",
+                            "items": [
+                                    "XP y sistema de niveles",
+                                    "Más de 50 logros",
+                                    "Recompensas personalizadas",
+                                    "Tablas de clasificación"
+                            ]
+                    },
+                    "ai": {
+                            "badge": "⭐ Populares",
+                            "title": "Asistente de IA",
+                            "desc": "Desarrollado por Google Gemini AI para conversaciones inteligentes, generación de imágenes y asistencia inteligente.",
+                            "items": [
+                                    "Conversaciones naturales",
+                                    "Generación de imágenes",
+                                    "Conciencia del contexto",
+                                    "Multi-idioma"
+                            ]
+                    },
+                    "story": {
+                            "badge": "🔥 Único",
+                            "title": "Sistema de historias interactivas",
+                            "desc": "¡Crea historias inmersivas de juegos de rol con narrativas impulsadas por IA, múltiples roles y opciones dinámicas!",
+                            "items": [
+                                    "Historias generadas por IA",
+                                    "Múltiples roles de personajes",
+                                    "Progresión dinámica de la historia",
+                                    "Juego por turnos",
+                                    "Plantillas de historias"
+                            ]
+                    },
+                    "template": {
+                            "badge": "🚀 Revolucionario",
+                            "title": "Creador de plantillas de IA",
+                            "desc": "¡Genera plantillas completas de servidor Discord con IA! Canales, roles, permisos: ¡todo automatizado!",
+                            "items": [
+                                    "Generación impulsada por IA",
+                                    "Categorías personalizadas",
+                                    "Configuración automática de roles",
+                                    "Plantillas de permisos",
+                                    "Implementación con un solo clic"
+                            ]
+                    },
+                    "agent": {
+                            "badge": "🆕 NUEVO",
+                            "title": "Agente de IA",
+                            "desc": "¡Ejecuta cualquier tarea de Discord con lenguaje natural! Simplemente dile a la IA lo que quieres y lo hará automáticamente.",
+                            "items": [
+                                    "Comandos en lenguaje natural",
+                                    "Crear canales y roles",
+                                    "Moderación de usuarios",
+                                    "Automatizaciones complejas",
+                                    "Sistemas carcelarios y de verificación"
+                            ]
+                    },
+                    "music": {
+                            "title": "Reproductor de música",
+                            "desc": "Transmisión de música de alta calidad con compatibilidad con listas de reproducción, efectos de audio y gestión de colas.",
+                            "items": [
+                                    "YouTube y Spotify",
+                                    "Listas de reproducción",
+                                    "efectos de audio",
+                                    "sistema de cola"
+                            ]
+                    },
+                    "welcome": {
+                            "title": "Sistema de bienvenida",
+                            "desc": "Mensajes de bienvenida personalizables, roles automáticos y seguimiento de miembros para saludar a los nuevos miembros.",
+                            "items": [
+                                    "Mensajes personalizados",
+                                    "Roles automáticos",
+                                    "Imágenes de bienvenida",
+                                    "DM bienvenido"
+                            ]
+                    },
+                    "language": {
+                            "title": "Varios idiomas",
+                            "desc": "Soporte completo para 8 idiomas con fácil cambio de idioma por servidor.",
+                            "items": [
+                                    "8 idiomas",
+                                    "Configuración por servidor",
+                                    "Cambio fácil",
+                                    "Traducción completa"
+                            ]
+                    },
+                    "analytics": {
+                            "title": "Analítica",
+                            "desc": "Información de la comunidad, seguimiento de actividad y estadísticas detalladas para comprender su servidor.",
+                            "items": [
+                                    "Seguimiento de actividad",
+                                    "Perspectivas de los miembros",
+                                    "Estadísticas de comando",
+                                    "Métricas de crecimiento"
+                            ]
+                    },
+                    "games": {
+                            "title": "Minijuegos",
+                            "desc": "Juegos divertidos que incluyen trivia, ahorcado, desafíos matemáticos y más para entretener a tu comunidad.",
+                            "items": [
+                                    "Juegos de preguntas",
+                                    "Verdugo",
+                                    "Desafíos matemáticos",
+                                    "Tablas de clasificación"
+                            ]
+                    },
+                    "roles": {
+                            "title": "Roles de reacción",
+                            "desc": "Fácil gestión de roles con roles de reacción y menús de roles personalizados.",
+                            "items": [
+                                    "Roles de reacción",
+                                    "Menús personalizados",
+                                    "Múltiples roles",
+                                    "Fácil configuración"
+                            ]
+                    },
+                    "tickets": {
+                            "title": "Sistema de tickets",
+                            "desc": "Sistema de tickets de soporte profesional con categorías, transcripciones y gestión de personal.",
+                            "items": [
+                                    "Múltiples categorías",
+                                    "Transcripciones automáticas",
+                                    "Funciones del personal",
+                                    "Mensajes personalizados"
+                            ]
+                    },
+                    "toxicity": {
+                            "title": "Filtro de toxicidad",
+                            "desc": "Moderación de contenido impulsada por IA para detectar y filtrar mensajes tóxicos automáticamente.",
+                            "items": [
+                                    "Detección de IA",
+                                    "Moderación automática",
+                                    "Umbrales personalizados",
+                                    "Explotación florestal"
+                            ]
+                    }
+            },
+            "commands": {
+                    "title": "Comandos populares",
+                    "subtitle": "Más de 150 comandos en más de 20 categorías",
+                    "footer": "¡Y muchos más! Utilice los comandos !en Discord para ver todos los comandos disponibles.",
+                    "viewAll": "📚 Ver lista completa de comandos"
+            },
+            "pricing": {
+                    "title": "Precios sencillos",
+                    "subtitle": "Elija el plan que se adapte a su comunidad",
+                    "month": "/mes",
+                    "year": "/año",
+                    "monthly": "Mensual",
+                    "yearly": "Anual",
+                    "saveUp": "¡Ahorra hasta un 40%!"
+            },
+            "support": {
+                    "title": "¿Necesitar ayuda?",
+                    "subtitle": "Únase a nuestro servidor de soporte para obtener asistencia, actualizaciones y comunidad.",
+                    "btnServer": "💬 Únase al servidor de soporte",
+                    "btnEmail": "📧 Soporte por correo electrónico"
+            },
+            "footer": {
+                    "tagline": "El bot de Discord definitivo para tu comunidad",
+                    "quickLinks": "Enlaces rápidos",
+                    "legal": "Legal",
+                    "connect": "Conectar",
+                    "voteForUs": "⭐ Vota por nosotros",
+                    "privacy": "política de privacidad",
+                    "terms": "Términos de servicio",
+                    "copyright": "© 2025 Asistente de seguridad Bot. Hecho con ❤️ para comunidades de Discord"
+            }
+    },
+    tr: {
+            "nav": {
+                    "features": "Özellikler",
+                    "commands": "Komutlar",
+                    "pricing": "Fiyatlandırma",
+                    "support": "Destek"
+            },
+            "hero": {
+                    "badge": "✨ Artık Yapay Zeka Entegrasyonuyla",
+                    "title": "Nihai Discord Botu",
+                    "titleGradient": "Topluluğunuz için",
+                    "description": "Güçlü güvenlik, akıllı denetleme, ilgi çekici seviyelendirme sistemi, yapay zeka asistanı, müzik çalar ve Discord sunucunuzu güçlendirecek 50'den fazla özellik.",
+                    "highlight1": "🔥 Yapay Zeka Destekli Hikaye Sistemi",
+                    "highlight2": "🚀 Otomatik Şablon Oluşturucu",
+                    "highlight3": "🎨 Resim ve GIF Oluşturma",
+                    "btnAdd": "➕ Discord'a Ekle",
+                    "btnLearn": "📖 Daha Fazla Bilgi Edinin",
+                    "stat1Number": "50+",
+                    "stat1Label": "Komutlar",
+                    "stat2Number": "7/24",
+                    "stat2Label": "Çalışma süresi",
+                    "stat3Number": "%100",
+                    "stat3Label": "Özgür"
+            },
+            "features": {
+                    "title": "Güçlü Özellikler",
+                    "subtitle": "Discord topluluğunuzu yönetmek ve büyütmek için ihtiyacınız olan her şey",
+                    "security": {
+                            "title": "Gelişmiş Güvenlik",
+                            "desc": "Sunucunuzu güvende tutmak için saldırı önleme koruması, otomatik denetleme, doğrulama sistemi ve gerçek zamanlı tehdit algılama.",
+                            "items": [
+                                    "Baskın önleme sistemi",
+                                    "Otomatik denetleme",
+                                    "Üye doğrulama",
+                                    "Takibi davet et"
+                            ]
+                    },
+                    "leveling": {
+                            "title": "Tesviye Sistemi",
+                            "desc": "XP, seviyeler, başarılar, liderlik tabloları ve özelleştirilebilir ödüllerle topluluğunuzla etkileşime geçin.",
+                            "items": [
+                                    "XP ve Seviye sistemi",
+                                    "50+ Başarı",
+                                    "Özel ödüller",
+                                    "Skor tabloları"
+                            ]
+                    },
+                    "ai": {
+                            "badge": "⭐ Popüler",
+                            "title": "Yapay Zeka Asistanı",
+                            "desc": "Akıllı konuşmalar, görüntü oluşturma ve akıllı yardım için Google Gemini AI tarafından desteklenmektedir.",
+                            "items": [
+                                    "Doğal konuşmalar",
+                                    "Görüntü oluşturma",
+                                    "Bağlam farkındalığı",
+                                    "Çoklu dil"
+                            ]
+                    },
+                    "story": {
+                            "badge": "🔥 Benzersiz",
+                            "title": "İnteraktif Hikaye Sistemi",
+                            "desc": "Yapay zeka destekli anlatılar, çoklu roller ve dinamik seçimlerle sürükleyici rol yapma hikayeleri yaratın!",
+                            "items": [
+                                    "Yapay zeka tarafından oluşturulan hikayeler",
+                                    "Çoklu karakter rolleri",
+                                    "Dinamik hikaye ilerlemesi",
+                                    "Sıra tabanlı oyun",
+                                    "Hikaye şablonları"
+                            ]
+                    },
+                    "template": {
+                            "badge": "🚀 Devrimci",
+                            "title": "AI Şablon Oluşturucu",
+                            "desc": "Yapay zeka ile eksiksiz Discord sunucu şablonları oluşturun! Kanallar, roller, izinler; hepsi otomatik!",
+                            "items": [
+                                    "Yapay zeka destekli nesil",
+                                    "Özel kategoriler",
+                                    "Otomatik rol kurulumu",
+                                    "İzin şablonları",
+                                    "Tek tıklamayla dağıtım"
+                            ]
+                    },
+                    "agent": {
+                            "badge": "🆕 YENİ",
+                            "title": "Yapay Zeka Temsilcisi",
+                            "desc": "Herhangi bir Discord görevini doğal dille gerçekleştirin! Yapay zekaya ne istediğinizi söyleyin, o da bunu otomatik olarak yapsın.",
+                            "items": [
+                                    "Doğal dil komutları",
+                                    "Kanallar ve roller oluşturun",
+                                    "Kullanıcı denetimi",
+                                    "Karmaşık otomasyonlar",
+                                    "Hapishane ve doğrulama sistemleri"
+                            ]
+                    },
+                    "music": {
+                            "title": "Müzik Çalar",
+                            "desc": "Çalma listesi desteği, ses efektleri ve kuyruk yönetimiyle yüksek kaliteli müzik akışı.",
+                            "items": [
+                                    "YouTube ve Spotify",
+                                    "Çalma listeleri",
+                                    "Ses efektleri",
+                                    "Kuyruk sistemi"
+                            ]
+                    },
+                    "welcome": {
+                            "title": "Karşılama Sistemi",
+                            "desc": "Yeni üyeleri karşılamak için özelleştirilebilir karşılama mesajları, otomatik roller ve üye takibi.",
+                            "items": [
+                                    "Özel mesajlar",
+                                    "Otomatik roller",
+                                    "Hoş geldiniz görselleri",
+                                    "DM'ye hoş geldiniz"
+                            ]
+                    },
+                    "language": {
+                            "title": "Çoklu Dil",
+                            "desc": "Sunucu başına kolay dil değiştirme özelliğiyle 8 dil için tam destek.",
+                            "items": [
+                                    "8 Dil",
+                                    "Sunucu başına ayarlar",
+                                    "Kolay geçiş",
+                                    "Tam çeviri"
+                            ]
+                    },
+                    "analytics": {
+                            "title": "Analitik",
+                            "desc": "Sunucunuzu anlamak için topluluk bilgileri, etkinlik takibi ve ayrıntılı istatistikler.",
+                            "items": [
+                                    "Etkinlik takibi",
+                                    "Üye görüşleri",
+                                    "Komut istatistikleri",
+                                    "Büyüme metrikleri"
+                            ]
+                    },
+                    "games": {
+                            "title": "Mini Oyunlar",
+                            "desc": "Topluluğunuzu eğlendirmek için trivia, cellat, matematik zorlukları ve daha fazlasını içeren eğlenceli oyunlar.",
+                            "items": [
+                                    "Trivia oyunları",
+                                    "Cellat",
+                                    "Matematik zorlukları",
+                                    "Skor tabloları"
+                            ]
+                    },
+                    "roles": {
+                            "title": "Reaksiyon Rolleri",
+                            "desc": "Tepki rolleri ve özel rol menüleriyle kolay rol yönetimi.",
+                            "items": [
+                                    "Reaksiyon rolleri",
+                                    "Özel menüler",
+                                    "Çoklu roller",
+                                    "Kolay kurulum"
+                            ]
+                    },
+                    "tickets": {
+                            "title": "Bilet Sistemi",
+                            "desc": "Kategoriler, transkriptler ve personel yönetimi ile profesyonel destek bilet sistemi.",
+                            "items": [
+                                    "Çoklu kategoriler",
+                                    "Otomatik transkriptler",
+                                    "Personel rolleri",
+                                    "Özel mesajlar"
+                            ]
+                    },
+                    "toxicity": {
+                            "title": "Toksisite Filtresi",
+                            "desc": "Zehirli mesajları otomatik olarak tespit etmek ve filtrelemek için yapay zeka destekli içerik denetimi.",
+                            "items": [
+                                    "AI tespiti",
+                                    "Otomatik denetleme",
+                                    "Özel eşikler",
+                                    "Günlüğe kaydetme"
+                            ]
+                    }
+            },
+            "commands": {
+                    "title": "Popüler Komutlar",
+                    "subtitle": "20'den fazla kategoride 150'den fazla komut",
+                    "footer": "Ve çok daha fazlası! Mevcut tüm komutları görmek için Discord'da !commands komutunu kullanın.",
+                    "viewAll": "📚 Tam Komut Listesini Görüntüle"
+            },
+            "pricing": {
+                    "title": "Basit Fiyatlandırma",
+                    "subtitle": "Topluluğunuza uygun planı seçin",
+                    "month": "/ay",
+                    "year": "/yıl",
+                    "monthly": "Aylık",
+                    "yearly": "Yıllık",
+                    "saveUp": "%40'a kadar tasarruf edin!"
+            },
+            "support": {
+                    "title": "Yardıma mı ihtiyacınız var?",
+                    "subtitle": "Yardım, güncellemeler ve topluluk için destek sunucumuza katılın",
+                    "btnServer": "💬 Destek Sunucusuna Katılın",
+                    "btnEmail": "📧 E-posta Desteği"
+            },
+            "footer": {
+                    "tagline": "Topluluğunuz için en iyi Discord botu",
+                    "quickLinks": "Hızlı Bağlantılar",
+                    "legal": "Yasal",
+                    "connect": "Bağlamak",
+                    "voteForUs": "⭐ Bize Oy Verin",
+                    "privacy": "Gizlilik Politikası",
+                    "terms": "Hizmet Şartları",
+                    "copyright": "© 2025 Güvenlik Asistanı Botu. Discord Toplulukları için ❤️ ile yapıldı"
+            }
+    },
+    ru: {
+            "nav": {
+                    "features": "Функции",
+                    "commands": "Команды",
+                    "pricing": "Цены",
+                    "support": "Поддерживать"
+            },
+            "hero": {
+                    "badge": "✨ Теперь с интеграцией ИИ",
+                    "title": "Лучший Discord-бот",
+                    "titleGradient": "для вашего сообщества",
+                    "description": "Мощная безопасность, интеллектуальная модерация, привлекательная система прокачки, AI-помощник, музыкальный проигрыватель и более 50 функций, которые расширят возможности вашего сервера Discord.",
+                    "highlight1": "🔥 Система историй на базе искусственного интеллекта",
+                    "highlight2": "🚀 Автоматический создатель шаблонов",
+                    "highlight3": "🎨 Генерация изображений и GIF",
+                    "btnAdd": "➕ Добавить в Discord",
+                    "btnLearn": "📖 Узнать больше",
+                    "stat1Number": "50+",
+                    "stat1Label": "Команды",
+                    "stat2Number": "24/7",
+                    "stat2Label": "Время работы",
+                    "stat3Number": "100%",
+                    "stat3Label": "Бесплатно"
+            },
+            "features": {
+                    "title": "Мощные функции",
+                    "subtitle": "Все, что вам нужно для управления и развития вашего сообщества Discord",
+                    "security": {
+                            "title": "Расширенная безопасность",
+                            "desc": "Антирейдовая защита, автоматическая модерация, система проверки и обнаружение угроз в реальном времени для обеспечения безопасности вашего сервера.",
+                            "items": [
+                                    "Антирейдовая система",
+                                    "Автомодерация",
+                                    "Проверка участника",
+                                    "Отслеживание приглашений"
+                            ]
+                    },
+                    "leveling": {
+                            "title": "Система выравнивания",
+                            "desc": "Привлекайте свое сообщество с помощью опыта, уровней, достижений, таблиц лидеров и настраиваемых наград.",
+                            "items": [
+                                    "Система опыта и уровней",
+                                    "50+ достижений",
+                                    "Пользовательские награды",
+                                    "Таблицы лидеров"
+                            ]
+                    },
+                    "ai": {
+                            "badge": "⭐ Популярный",
+                            "title": "ИИ-помощник",
+                            "desc": "Работает на базе искусственного интеллекта Google Gemini для интеллектуального общения, создания изображений и интеллектуальной помощи.",
+                            "items": [
+                                    "Естественные разговоры",
+                                    "Генерация изображений",
+                                    "Осведомленность о контексте",
+                                    "Многоязычный"
+                            ]
+                    },
+                    "story": {
+                            "badge": "🔥Уникальный",
+                            "title": "Интерактивная система историй",
+                            "desc": "Создавайте захватывающие ролевые истории с повествованием на базе искусственного интеллекта, множеством ролей и динамичным выбором!",
+                            "items": [
+                                    "Истории, созданные ИИ",
+                                    "Несколько ролей персонажей",
+                                    "Динамичное развитие сюжета",
+                                    "Пошаговый геймплей",
+                                    "Шаблоны историй"
+                            ]
+                    },
+                    "template": {
+                            "badge": "🚀 Революционный",
+                            "title": "Создатель шаблонов ИИ",
+                            "desc": "Создавайте полные шаблоны серверов Discord с помощью ИИ! Каналы, роли, разрешения – все автоматизировано!",
+                            "items": [
+                                    "Поколение на основе искусственного интеллекта",
+                                    "Пользовательские категории",
+                                    "Автоматическая настройка роли",
+                                    "Шаблоны разрешений",
+                                    "Развертывание в один клик"
+                            ]
+                    },
+                    "agent": {
+                            "badge": "🆕НОВИНКА",
+                            "title": "ИИ-агент",
+                            "desc": "Выполняйте любую задачу Discord на естественном языке! Просто скажите ИИ, чего вы хотите, и он сделает это автоматически.",
+                            "items": [
+                                    "Команды естественного языка",
+                                    "Создание каналов и ролей",
+                                    "Пользовательская модерация",
+                                    "Комплексная автоматизация",
+                                    "Тюрьма и системы проверки"
+                            ]
+                    },
+                    "music": {
+                            "title": "Музыкальный плеер",
+                            "desc": "Высококачественная потоковая передача музыки с поддержкой списков воспроизведения, звуковыми эффектами и управлением очередями.",
+                            "items": [
+                                    "YouTube и Spotify",
+                                    "Плейлисты",
+                                    "Аудио эффекты",
+                                    "Система очередей"
+                            ]
+                    },
+                    "welcome": {
+                            "title": "Приветственная система",
+                            "desc": "Настраиваемые приветственные сообщения, автоматические роли и отслеживание участников для приветствия новых участников.",
+                            "items": [
+                                    "Пользовательские сообщения",
+                                    "Авто-роли",
+                                    "Приветственные изображения",
+                                    "DM, добро пожаловать"
+                            ]
+                    },
+                    "language": {
+                            "title": "Многоязычный",
+                            "desc": "Полная поддержка 8 языков с простым переключением языков на сервере.",
+                            "items": [
+                                    "8 языков",
+                                    "Настройки для каждого сервера",
+                                    "Легкое переключение",
+                                    "Полный перевод"
+                            ]
+                    },
+                    "analytics": {
+                            "title": "Аналитика",
+                            "desc": "Информация о сообществе, отслеживание активности и подробная статистика для понимания вашего сервера.",
+                            "items": [
+                                    "Отслеживание активности",
+                                    "Мнения участников",
+                                    "Статистика команд",
+                                    "Показатели роста"
+                            ]
+                    },
+                    "games": {
+                            "title": "Мини-игры",
+                            "desc": "Веселые игры, включая викторины, палача, математические задачи и многое другое, чтобы развлечь ваше сообщество.",
+                            "items": [
+                                    "Викторины",
+                                    "Палач",
+                                    "Математические задачи",
+                                    "Таблицы лидеров"
+                            ]
+                    },
+                    "roles": {
+                            "title": "Роли реакции",
+                            "desc": "Простое управление ролями с помощью ролей реагирования и меню настраиваемых ролей.",
+                            "items": [
+                                    "Роли реакции",
+                                    "Пользовательские меню",
+                                    "Несколько ролей",
+                                    "Простая настройка"
+                            ]
+                    },
+                    "tickets": {
+                            "title": "Билетная система",
+                            "desc": "Система заявок профессиональной поддержки с категориями, стенограммами и управлением персоналом.",
+                            "items": [
+                                    "Несколько категорий",
+                                    "Автоматические расшифровки",
+                                    "Роли персонала",
+                                    "Пользовательские сообщения"
+                            ]
+                    },
+                    "toxicity": {
+                            "title": "Фильтр токсичности",
+                            "desc": "Модерация контента на базе искусственного интеллекта для автоматического обнаружения и фильтрации токсичных сообщений.",
+                            "items": [
+                                    "Обнаружение ИИ",
+                                    "Автоматическая модерация",
+                                    "Пользовательские пороги",
+                                    "Ведение журнала"
+                            ]
+                    }
+            },
+            "commands": {
+                    "title": "Популярные команды",
+                    "subtitle": "Более 150+ команд в более чем 20 категориях",
+                    "footer": "И многое другое! Используйте команды ! в Discord, чтобы просмотреть все доступные команды.",
+                    "viewAll": "📚 Посмотреть полный список команд"
+            },
+            "pricing": {
+                    "title": "Простое ценообразование",
+                    "subtitle": "Выберите план, который подходит вашему сообществу",
+                    "month": "/месяц",
+                    "year": "/год",
+                    "monthly": "Ежемесячно",
+                    "yearly": "Ежегодно",
+                    "saveUp": "Экономьте до 40%!"
+            },
+            "support": {
+                    "title": "Нужна помощь?",
+                    "subtitle": "Присоединяйтесь к нашему серверу поддержки для получения помощи, обновлений и общения с сообществом.",
+                    "btnServer": "💬 Присоединяйтесь к серверу поддержки",
+                    "btnEmail": "📧 Поддержка по электронной почте"
+            },
+            "footer": {
+                    "tagline": "Лучший бот Discord для вашего сообщества",
+                    "quickLinks": "Быстрые ссылки",
+                    "legal": "Юридический",
+                    "connect": "Соединять",
+                    "voteForUs": "⭐ Голосуйте за нас",
+                    "privacy": "политика конфиденциальности",
+                    "terms": "Условия использования",
+                    "copyright": "© 2025 Security Assistant Bot. Сделано с ❤️ для сообществ Discord"
+            }
+    },
+    pt: {
+            "nav": {
+                    "features": "Características",
+                    "commands": "Comandos",
+                    "pricing": "Preços",
+                    "support": "Apoiar"
+            },
+            "hero": {
+                    "badge": "✨ Agora com integração de IA",
+                    "title": "O bot de discórdia definitivo",
+                    "titleGradient": "para sua comunidade",
+                    "description": "Segurança poderosa, moderação inteligente, sistema de nivelamento envolvente, assistente de IA, reprodutor de música e mais de 50 recursos para turbinar seu servidor Discord.",
+                    "highlight1": "🔥 Sistema de história baseado em IA",
+                    "highlight2": "🚀 Criador de modelo automatizado",
+                    "highlight3": "🎨 Geração de imagens e GIFs",
+                    "btnAdd": "➕ Adicionar ao Discord",
+                    "btnLearn": "📖 Saiba mais",
+                    "stat1Number": "Mais de 50",
+                    "stat1Label": "Comandos",
+                    "stat2Number": "24 horas por dia, 7 dias por semana",
+                    "stat2Label": "Tempo de atividade",
+                    "stat3Number": "100%",
+                    "stat3Label": "Livre"
+            },
+            "features": {
+                    "title": "Recursos poderosos",
+                    "subtitle": "Tudo que você precisa para gerenciar e expandir sua comunidade Discord",
+                    "security": {
+                            "title": "Segurança Avançada",
+                            "desc": "Proteção anti-raid, moderação automática, sistema de verificação e detecção de ameaças em tempo real para manter seu servidor seguro.",
+                            "items": [
+                                    "Sistema anti-ataque",
+                                    "Moderação automática",
+                                    "Verificação de membro",
+                                    "Rastreamento de convites"
+                            ]
+                    },
+                    "leveling": {
+                            "title": "Sistema de Nivelamento",
+                            "desc": "Envolva sua comunidade com XP, níveis, conquistas, tabelas de classificação e recompensas personalizáveis.",
+                            "items": [
+                                    "Sistema XP e Nível",
+                                    "Mais de 50 conquistas",
+                                    "Recompensas personalizadas",
+                                    "Tabelas de classificação"
+                            ]
+                    },
+                    "ai": {
+                            "badge": "⭐ Populares",
+                            "title": "Assistente de IA",
+                            "desc": "Desenvolvido com Google Gemini AI para conversas inteligentes, geração de imagens e assistência inteligente.",
+                            "items": [
+                                    "Conversas naturais",
+                                    "Geração de imagem",
+                                    "Consciência do contexto",
+                                    "Multilíngue"
+                            ]
+                    },
+                    "story": {
+                            "badge": "🔥 Único",
+                            "title": "Sistema de história interativa",
+                            "desc": "Crie histórias envolventes de RPG com narrativas baseadas em IA, vários papéis e escolhas dinâmicas!",
+                            "items": [
+                                    "Histórias geradas por IA",
+                                    "Vários papéis de personagens",
+                                    "Progressão dinâmica da história",
+                                    "Jogabilidade baseada em turnos",
+                                    "Modelos de história"
+                            ]
+                    },
+                    "template": {
+                            "badge": "🚀 Revolucionário",
+                            "title": "Criador de modelo de IA",
+                            "desc": "Gere modelos completos de servidor Discord com IA! Canais, funções, permissões – tudo automatizado!",
+                            "items": [
+                                    "Geração alimentada por IA",
+                                    "Categorias personalizadas",
+                                    "Configuração automática de função",
+                                    "Modelos de permissão",
+                                    "Implantação com um clique"
+                            ]
+                    },
+                    "agent": {
+                            "badge": "🆕 NOVO",
+                            "title": "Agente de IA",
+                            "desc": "Execute qualquer tarefa do Discord com linguagem natural! Basta dizer à IA o que você deseja e ela fará isso automaticamente.",
+                            "items": [
+                                    "Comandos de linguagem natural",
+                                    "Crie canais e funções",
+                                    "Moderação do usuário",
+                                    "Automações complexas",
+                                    "Sistemas de prisão e verificação"
+                            ]
+                    },
+                    "music": {
+                            "title": "Leitor de música",
+                            "desc": "Streaming de música de alta qualidade com suporte para lista de reprodução, efeitos de áudio e gerenciamento de filas.",
+                            "items": [
+                                    "YouTube e Spotify",
+                                    "Listas de reprodução",
+                                    "Efeitos de áudio",
+                                    "Sistema de fila"
+                            ]
+                    },
+                    "welcome": {
+                            "title": "Sistema de boas-vindas",
+                            "desc": "Mensagens de boas-vindas personalizáveis, funções automáticas e rastreamento de membros para cumprimentar novos membros.",
+                            "items": [
+                                    "Mensagens personalizadas",
+                                    "Funções automáticas",
+                                    "Imagens de boas-vindas",
+                                    "DM bem-vindo"
+                            ]
+                    },
+                    "language": {
+                            "title": "Multilíngue",
+                            "desc": "Suporte completo para 8 idiomas com fácil troca de idioma por servidor.",
+                            "items": [
+                                    "8 idiomas",
+                                    "Configurações por servidor",
+                                    "Troca fácil",
+                                    "Tradução completa"
+                            ]
+                    },
+                    "analytics": {
+                            "title": "Análise",
+                            "desc": "Insights da comunidade, rastreamento de atividades e estatísticas detalhadas para entender seu servidor.",
+                            "items": [
+                                    "Rastreamento de atividades",
+                                    "Informações dos membros",
+                                    "Estatísticas de comando",
+                                    "Métricas de crescimento"
+                            ]
+                    },
+                    "games": {
+                            "title": "Minijogos",
+                            "desc": "Jogos divertidos, incluindo curiosidades, carrasco, desafios matemáticos e muito mais para entreter sua comunidade.",
+                            "items": [
+                                    "Jogos de curiosidades",
+                                    "Carrasco",
+                                    "Desafios matemáticos",
+                                    "Tabelas de classificação"
+                            ]
+                    },
+                    "roles": {
+                            "title": "Papéis de reação",
+                            "desc": "Fácil gerenciamento de funções com funções de reação e menus de funções personalizados.",
+                            "items": [
+                                    "Papéis de reação",
+                                    "Menus personalizados",
+                                    "Múltiplas funções",
+                                    "Configuração fácil"
+                            ]
+                    },
+                    "tickets": {
+                            "title": "Sistema de ingressos",
+                            "desc": "Sistema de tickets de suporte profissional com categorias, transcrições e gerenciamento de equipe.",
+                            "items": [
+                                    "Múltiplas categorias",
+                                    "Transcrições automáticas",
+                                    "Funções da equipe",
+                                    "Mensagens personalizadas"
+                            ]
+                    },
+                    "toxicity": {
+                            "title": "Filtro de toxicidade",
+                            "desc": "Moderação de conteúdo com tecnologia de IA para detectar e filtrar mensagens tóxicas automaticamente.",
+                            "items": [
+                                    "Detecção de IA",
+                                    "Moderação automática",
+                                    "Limites personalizados",
+                                    "Registro"
+                            ]
+                    }
+            },
+            "commands": {
+                    "title": "Comandos populares",
+                    "subtitle": "Mais de 150 comandos em mais de 20 categorias",
+                    "footer": "E muito mais! Use !commands no Discord para ver todos os comandos disponíveis.",
+                    "viewAll": "📚 Ver lista completa de comandos"
+            },
+            "pricing": {
+                    "title": "Preço Simples",
+                    "subtitle": "Escolha o plano que se adapta à sua comunidade",
+                    "month": "/mês",
+                    "year": "/ano",
+                    "monthly": "Mensal",
+                    "yearly": "Anual",
+                    "saveUp": "Economize até 40%!"
+            },
+            "support": {
+                    "title": "Precisar de ajuda?",
+                    "subtitle": "Junte-se ao nosso servidor de suporte para obter assistência, atualizações e comunidade",
+                    "btnServer": "💬 Junte-se ao servidor de suporte",
+                    "btnEmail": "📧 Suporte por e-mail"
+            },
+            "footer": {
+                    "tagline": "O bot Discord definitivo para sua comunidade",
+                    "quickLinks": "Links rápidos",
+                    "legal": "Jurídico",
+                    "connect": "Conectar",
+                    "voteForUs": "⭐ Vote em nós",
+                    "privacy": "política de Privacidade",
+                    "terms": "Termos de Serviço",
+                    "copyright": "© 2025 Bot do Assistente de Segurança. Feito com ❤️ para comunidades Discord"
+            }
     }
+
 };

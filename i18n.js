@@ -17,7 +17,8 @@ class I18nManager {
     
     // Switch language
     switchLanguage(lang) {
-        if (lang !== 'en' && lang !== 'el') {
+        const validLangs = ['en', 'el', 'de', 'fr', 'es', 'tr', 'ru', 'pt'];
+        if (!validLangs.includes(lang)) {
             console.error('Invalid language:', lang);
             return;
         }
