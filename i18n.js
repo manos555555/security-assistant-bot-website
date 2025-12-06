@@ -18,13 +18,23 @@ class I18nManager {
     // Switch language
     switchLanguage(lang) {
         const validLangs = ['en', 'el', 'de', 'fr', 'es', 'tr', 'ru', 'pt'];
+        console.log('Switching to language:', lang);
+        
         if (!validLangs.includes(lang)) {
             console.error('Invalid language:', lang);
             return;
         }
         
+        // Check if translation exists
+        if (!this.translations[lang]) {
+            console.error('Translation not found for:', lang);
+            console.log('Available languages:', Object.keys(this.translations));
+            return;
+        }
+        
         this.currentLang = lang;
         this.storeLanguage(lang);
+        console.log('Language set to:', this.currentLang);
         this.updatePage();
         this.updateLanguageButtons();
     }
