@@ -119,6 +119,13 @@ const translations = {
                 title: "Toxicity Filter",
                 desc: "AI-powered content moderation to detect and filter toxic messages automatically.",
                 items: ["AI detection", "Auto moderation", "Custom thresholds", "Logging"]
+            },
+            
+            streaming: {
+                badge: "📺 NEW",
+                title: "Stream Notifications",
+                desc: "Get notified when your favorite Twitch and TikTok streamers go live! Never miss a stream again.",
+                items: ["Twitch integration", "TikTok Live support", "Custom notifications", "Multi-streamer tracking", "Offline alerts"]
             }
         },
         
@@ -145,9 +152,14 @@ const translations = {
             cat_roles: "🎭 Reaction Roles",
             cat_voice: "🎙️ Temp Voice",
             cat_food: "🍕 Food & Recipes",
+            cat_streaming: "📺 Stream Notifications",
             cat_utils: "🔧 Utilities",
             
             // Command descriptions
+            stream_add_desc: "Add streamer to track",
+            stream_remove_desc: "Remove streamer",
+            stream_list_desc: "List tracked streamers",
+            stream_channel_desc: "Set notification channel",
             ask_desc: "Ask AI anything",
             agent_desc: "AI executes Discord tasks",
             admin_desc: "AI Server Assistant panel",
@@ -273,6 +285,7 @@ const translations = {
                     "🧠 Memory: UNLIMITED",
                     "🖼️ Image Gen: 10/day",
                     "🎬 GIF Gen: 5/day",
+                    "📺 Stream Notifications: 5 streamers",
                     "🔍 Torrent: 20/day",
                     "🛡️ Anti-Raid",
                     "👮 Moderation",
@@ -295,6 +308,7 @@ const translations = {
                     "🤖 AI: UNLIMITED",
                     "🖼️ Image Gen: UNLIMITED",
                     "🎬 GIF Gen: UNLIMITED",
+                    "📺 Stream Notifications: 15 streamers",
                     "🔍 Torrent: UNLIMITED",
                     "🍕 Food: UNLIMITED",
                     "📝 Templates: UNLIMITED",
@@ -315,6 +329,7 @@ const translations = {
                     "✨ All VIP Features",
                     "🤖 AI Agent: 50/month",
                     "🤖 AI: UNLIMITED for all",
+                    "📺 Stream Notifications: UNLIMITED",
                     "👥 Multi-Admin Support",
                     "📊 Advanced Analytics",
                     "🔒 Enhanced Security",
@@ -469,6 +484,13 @@ const translations = {
                 title: "Φίλτρο Τοξικότητας",
                 desc: "AI-powered διαχείριση περιεχομένου για ανίχνευση και φιλτράρισμα τοξικών μηνυμάτων αυτόματα.",
                 items: ["AI ανίχνευση", "Αυτόματη διαχείριση", "Προσαρμοσμένα όρια", "Καταγραφή"]
+            },
+            
+            streaming: {
+                badge: "📺 ΝΕΟ",
+                title: "Ειδοποιήσεις Stream",
+                desc: "Λάβε ειδοποίηση όταν οι αγαπημένοι σου Twitch και TikTok streamers ξεκινούν live! Μην χάσεις ποτέ stream.",
+                items: ["Twitch integration", "TikTok Live υποστήριξη", "Προσαρμοσμένες ειδοποιήσεις", "Πολλαπλοί streamers", "Ειδοποιήσεις offline"]
             }
         },
         
@@ -495,9 +517,14 @@ const translations = {
             cat_roles: "� Reaction Roles",
             cat_voice: "🎙️ Προσωρινά Κανάλια",
             cat_food: "🍕 Φαγητό & Συνταγές",
+            cat_streaming: "📺 Ειδοποιήσεις Stream",
             cat_utils: "🔧 Εργαλεία",
             
             // Command descriptions
+            stream_add_desc: "Πρόσθεσε streamer για παρακολούθηση",
+            stream_remove_desc: "Αφαίρεσε streamer",
+            stream_list_desc: "Λίστα streamers",
+            stream_channel_desc: "Όρισε κανάλι ειδοποιήσεων",
             ask_desc: "Ρώτα το AI οτιδήποτε",
             agent_desc: "Το AI εκτελεί εργασίες Discord",
             admin_desc: "Πάνελ AI Server Assistant",
@@ -623,6 +650,7 @@ const translations = {
                     "🧠 Memory: ΑΠΕΡΙΟΡΙΣΤΟ",
                     "🖼️ Image Gen: 10/ημέρα",
                     "🎬 GIF Gen: 5/ημέρα",
+                    "📺 Stream Notifications: 5 streamers",
                     "🔍 Torrent: 20/ημέρα",
                     "🛡️ Anti-Raid",
                     "👮 Moderation",
@@ -645,6 +673,7 @@ const translations = {
                     "🤖 AI: ΑΠΕΡΙΟΡΙΣΤΟ",
                     "🖼️ Image Gen: ΑΠΕΡΙΟΡΙΣΤΟ",
                     "🎬 GIF Gen: ΑΠΕΡΙΟΡΙΣΤΟ",
+                    "📺 Stream Notifications: 15 streamers",
                     "🔍 Torrent: ΑΠΕΡΙΟΡΙΣΤΟ",
                     "🍕 Food: ΑΠΕΡΙΟΡΙΣΤΟ",
                     "📝 Templates: ΑΠΕΡΙΟΡΙΣΤΟ",
@@ -665,6 +694,7 @@ const translations = {
                     "✨ Όλα τα VIP",
                     "🤖 AI Agent: 50/μήνα",
                     "🤖 AI: ΑΠΕΡΙΟΡΙΣΤΟ για όλους",
+                    "📺 Stream Notifications: ΑΠΕΡΙΟΡΙΣΤΟ",
                     "👥 Multi-Admin Support",
                     "📊 Advanced Analytics",
                     "🔒 Enhanced Security",
@@ -871,6 +901,18 @@ const translations = {
                                     "Automatische Moderation",
                                     "Benutzerdefinierte Schwellenwerte",
                                     "Protokollierung"
+                            ]
+                    },
+                    "streaming": {
+                            "badge": "📺 NEU",
+                            "title": "Stream-Benachrichtigungen",
+                            "desc": "Erhalte Benachrichtigungen, wenn deine Lieblings-Twitch- und TikTok-Streamer live gehen! Verpasse nie wieder einen Stream.",
+                            "items": [
+                                    "Twitch-Integration",
+                                    "TikTok Live-Unterstützung",
+                                    "Benutzerdefinierte Benachrichtigungen",
+                                    "Multi-Streamer-Tracking",
+                                    "Offline-Benachrichtigungen"
                             ]
                     }
             },
@@ -1079,6 +1121,18 @@ const translations = {
                                     "Seuils personnalisés",
                                     "Enregistrement"
                             ]
+                    },
+                    "streaming": {
+                            "badge": "📺 NOUVEAU",
+                            "title": "Notifications de Stream",
+                            "desc": "Soyez notifié quand vos streamers Twitch et TikTok préférés passent en live ! Ne manquez plus jamais un stream.",
+                            "items": [
+                                    "Intégration Twitch",
+                                    "Support TikTok Live",
+                                    "Notifications personnalisées",
+                                    "Suivi multi-streamers",
+                                    "Alertes hors ligne"
+                            ]
                     }
             },
             "commands": {
@@ -1284,7 +1338,19 @@ const translations = {
                                     "Detección de IA",
                                     "Moderación automática",
                                     "Umbrales personalizados",
-                                    "Explotación florestal"
+                                    "Registro"
+                            ]
+                    },
+                    "streaming": {
+                            "badge": "📺 NUEVO",
+                            "title": "Notificaciones de Stream",
+                            "desc": "¡Recibe notificaciones cuando tus streamers favoritos de Twitch y TikTok estén en vivo! Nunca te pierdas un stream.",
+                            "items": [
+                                    "Integración con Twitch",
+                                    "Soporte TikTok Live",
+                                    "Notificaciones personalizadas",
+                                    "Seguimiento multi-streamer",
+                                    "Alertas de desconexión"
                             ]
                     }
             },
@@ -1493,6 +1559,18 @@ const translations = {
                                     "Özel eşikler",
                                     "Günlüğe kaydetme"
                             ]
+                    },
+                    "streaming": {
+                            "badge": "📺 YENİ",
+                            "title": "Yayın Bildirimleri",
+                            "desc": "Favori Twitch ve TikTok yayıncılarınız canlı yayına başladığında bildirim alın! Bir daha asla yayın kaçırmayın.",
+                            "items": [
+                                    "Twitch entegrasyonu",
+                                    "TikTok Live desteği",
+                                    "Özel bildirimler",
+                                    "Çoklu yayıncı takibi",
+                                    "Çevrimdışı uyarıları"
+                            ]
                     }
             },
             "commands": {
@@ -1700,6 +1778,18 @@ const translations = {
                                     "Пользовательские пороги",
                                     "Ведение журнала"
                             ]
+                    },
+                    "streaming": {
+                            "badge": "📺 НОВОЕ",
+                            "title": "Уведомления о стримах",
+                            "desc": "Получайте уведомления, когда ваши любимые стримеры Twitch и TikTok выходят в эфир! Больше никогда не пропустите стрим.",
+                            "items": [
+                                    "Интеграция с Twitch",
+                                    "Поддержка TikTok Live",
+                                    "Настраиваемые уведомления",
+                                    "Отслеживание нескольких стримеров",
+                                    "Оповещения об офлайне"
+                            ]
                     }
             },
             "commands": {
@@ -1906,6 +1996,18 @@ const translations = {
                                     "Moderação automática",
                                     "Limites personalizados",
                                     "Registro"
+                            ]
+                    },
+                    "streaming": {
+                            "badge": "📺 NOVO",
+                            "title": "Notificações de Stream",
+                            "desc": "Receba notificações quando seus streamers favoritos do Twitch e TikTok entrarem ao vivo! Nunca mais perca uma transmissão.",
+                            "items": [
+                                    "Integração com Twitch",
+                                    "Suporte TikTok Live",
+                                    "Notificações personalizadas",
+                                    "Rastreamento multi-streamer",
+                                    "Alertas de offline"
                             ]
                     }
             },

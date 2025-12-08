@@ -152,7 +152,16 @@ class I18nManager {
 // Create global i18n instance
 const i18n = new I18nManager();
 
+// Debug: Check translations object
+console.log('🌐 Translations object loaded:', typeof translations !== 'undefined');
+if (typeof translations !== 'undefined') {
+    console.log('🌐 Available languages:', Object.keys(translations));
+}
+
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('🌐 DOM loaded, initializing i18n...');
     i18n.init();
+    console.log('🌐 i18n initialized, current language:', i18n.currentLang);
+    console.log('🌐 Language buttons found:', document.querySelectorAll('.lang-btn').length);
 });
